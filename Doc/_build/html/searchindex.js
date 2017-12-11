@@ -1,1 +1,0 @@
-Search.setIndex({docnames:["index"],envversion:52,filenames:["index.rst"],objects:{},objnames:{},objtypes:{},terms:{index:[],modul:[],page:[],search:[]},titles:["Welcome to drexel\u2019s documentation!"],titleterms:{document:0,drexel:0,indic:[],tabl:[],test:[],welcom:0}})
