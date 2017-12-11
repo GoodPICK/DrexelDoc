@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Administration &mdash; test 1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="test 1 documentation" href="../index.html"/>
+        <link rel="next" title="Installation" href="Views.html"/>
+        <link rel="prev" title="Welcome to DrexelDoc’s documentation!" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> test
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Administration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Описание ролей</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#administrators">Administrators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clinicians">Clinicians</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#participants">Participants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clinician-schedule">Clinician Schedule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use-recovery">Use recovery</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Views.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Study.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Expression.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intervention.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Export.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Report.html">Installation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">test</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Administration</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/page/Administration.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="administration">
+<h1>Administration<a class="headerlink" href="#administration" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Описание ролей<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><strong>Master</strong> - nак как на портале отключена регистрация, то для первоначального создания пользователей создан специальный аккаунт - master account. Данный аккаунт обладает теми же привилегиями что и администраторы, но не может быть удален или изменен.</p>
+<dl class="docutils">
+<dt><strong>Administrator</strong> - обладает полным доступом ко всем функциям портала:</dt>
+<dd><ul class="first last simple">
+<li>Просмотр, создание и редактирование данных всех <em>Study</em></li>
+<li>Просмотр, создание и редактирование настроек Interventions</li>
+<li>Просмотр, создание и редактирование расписания <strong>Clinician</strong></li>
+<li>Просмотр, создание и редактирование пользователей (включая администраторов)</li>
+<li>Просмотр, создание и редактирование автоматических текстов</li>
+<li>Просмотр данных ВСЕХ <strong>Participant</strong></li>
+<li>Export</li>
+<li>Report</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">В данный момент любой администратор может добавить другого администратора.</p>
+</div>
+<p><strong>Clinician</strong> – роль с ограниченными возможностями. Не может добавлять и редатировать пользователей. Просматривать данные Participant’s не входящих в группы в которых является руоводителем.</p>
+<p><strong>Participant</strong> – данные пользователи в данный момент не имеют возможности авторизации на портале. Являются объектами обработки данных.</p>
+</div>
+<div class="section" id="administrators">
+<h2>Administrators<a class="headerlink" href="#administrators" title="Permalink to this headline">¶</a></h2>
+<p>Управление пользователями с ролью Administrator осуществляется на странице <a class="reference external" href="http://drexel.azurewebsites.net/Admin/Administrators">Administrators</a>.</p>
+<a class="reference external image-reference" href="../../_static/Images/Screenshot_1.png"><img alt="../_images/Screenshot_1.png" src="../_images/Screenshot_1.png" /></a>
+<p><em>Administrators Page Interface</em></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Создание нового адм</li>
+<li>востановление заархивированных администраторов</li>
+<li>редактирование выбранного пользователя</li>
+<li>архивирование выбраного пользователя</li>
+</ol>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Заархивированные адм не имеют возможности авторизоваться на портале, а так же не доступны для назначения координаторами исследования. Позднее они могут быть восстановлены (Смотрите пункт 3)</p>
+</div>
+</div>
+<div class="section" id="clinicians">
+<h2>Clinicians<a class="headerlink" href="#clinicians" title="Permalink to this headline">¶</a></h2>
+<p>Управление пользователями с ролью Clinician осуществляется на странице Clinicains.</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_3.png"><img alt="../_images/Figure_3.png" src="../_images/Figure_3.png" /></a>
+<p><em>Clinicians Page Interface</em></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>создание нового клин</li>
+<li>востановление клин</li>
+<li>поиск по всем полям актив клин</li>
+<li>редактирование</li>
+<li>архивирование</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="participants">
+<h2>Participants<a class="headerlink" href="#participants" title="Permalink to this headline">¶</a></h2>
+<p>Управление пользователями с ролью Participant осуществляется на странице Participants.</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_4.png"><img alt="../_images/Figure_4.png" src="../_images/Figure_4.png" /></a>
+<p><em>Participants Page Interface</em></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>создание нового пользователя</li>
+<li>востановление заархивированных</li>
+<li>функция импорта ( массового добавления пользователей (возможно устарело))</li>
+<li>поиск по всех пользователям</li>
+<li>Поля имени participant, так же является ссылкой на страницу Participant View (LINK!)</li>
+<li>Поле ExternalId, может содержать любое значение однозначно индетифицируещее пользователя или ничего</li>
+<li>Координатор группы в которой состоит Part</li>
+<li>Название группы в которой состоит парт, также является ссылкой на Group View (link)</li>
+<li>показывает привязан ли  данному пользователю аккаунт фитбита</li>
+<li>редактирование пользователя</li>
+<li>архивирование</li>
+<li>привязка аккаунта фитбит к данному пользователю</li>
+</ol>
+</div></blockquote>
+<dl class="docutils">
+<dt>Окно для управления аккунтом фитбит данного пользователя.</dt>
+<dd><a class="first last reference external image-reference" href="../../_static/Images/Figure_5.png"><img alt="../_images/Figure_5.png" src="../_images/Figure_5.png" /></a>
+</dd>
+</dl>
+<p><em>Fitbit Assinging Window</em></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>показывает привязан ли фитбит аккаунт</li>
+<li>ссылка для перехода на сайт фитбит для акторизации данного пользователя</li>
+<li>ссылка так же может быть сгенерирована и отображена в окне</li>
+<li>отображение сгенерированной ссылки</li>
+<li>добавить извещение о успегном создании сабсрипшена</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="clinician-schedule">
+<h2>Clinician Schedule<a class="headerlink" href="#clinician-schedule" title="Permalink to this headline">¶</a></h2>
+<p>Страница для управления расписанием клин - <a class="reference external" href="http://drexel.azurewebsites.net/Schedule">http://drexel.azurewebsites.net/Schedule</a></p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_6.png"><img alt="../_images/Figure_6.png" src="../_images/Figure_6.png" /></a>
+<p><em>Clinician Schedule Page Interface</em></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>выбор пользователя для редактирования</li>
+<li>добавления нового правила для определенной группы</li>
+<li>Данное поле отображает для какой группы создана расписание либо указывает что данная расписание является стандартной</li>
+<li>Эллемент для удаления расписание для определенных групп, удаление стандарного расписания недоступно</li>
+<li>поля показывающее время начала и конца временного периода, который готов потратить клинишн в отпереленный день недели</li>
+</ol>
+</div></blockquote>
+<p>Время конца периода не может превышать время начала периода, также периоды не должны пересекаться с другими периодами для этого дня.</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_7.png"><img alt="../_images/Figure_7.png" src="../_images/Figure_7.png" /></a>
+<p><em>Окно добавления расписания для группы</em></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>В окне добавления расписания в поле выбора группы отображаются только те группы для которых клинишн является координатором</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="use-recovery">
+<h2>Use recovery<a class="headerlink" href="#use-recovery" title="Permalink to this headline">¶</a></h2>
+<p>На портале мы не удаляем данные и пользователей, поэтому любой заархивированный пользователей позднее может быть востановлен.</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_8.png"><img alt="Administrators Page Interface" src="../_images/Figure_8.png" /></a>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Views.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Welcome to DrexelDoc’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, t.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
