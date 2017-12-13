@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; test 1 documentation</title>
+  <title>Expressions &mdash; test 1 documentation</title>
   
 
   
@@ -36,8 +36,8 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="test 1 documentation" href="../index.html"/>
-        <link rel="next" title="Installation" href="Intervention.html"/>
-        <link rel="prev" title="Installation" href="Study.html"/> 
+        <link rel="next" title="Interventions" href="Intervention.html"/>
+        <link rel="prev" title="Study" href="Study.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -91,14 +91,17 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Administration.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Views.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Study.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#stable-release">Stable release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Administration.html">Administration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Views.html">View’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Study.html">Study</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Expressions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rs-espression">Rs Espression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optimazed-expression">Optimazed Expression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#non-optimazed-expression">Non-Optimazed Expression</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Intervention.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intervention.html">Interventions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Export.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Report.html">Installation</a></li>
 </ul>
@@ -145,7 +148,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Installation</li>
+      <li>Expressions</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -164,10 +167,94 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="stable-release">
-<h2>Stable release<a class="headerlink" href="#stable-release" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="expressions">
+<h1>Expressions<a class="headerlink" href="#expressions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Expressions – необходимы для управления обработкой данных порталом без необходимости измененния самого портала. К соженению данная фича достаточно сложна для пониманию и требует некоторых навыков программирования,но это пожалуй единственный способ изменения обработки данных с полным контролем данных.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Нужно уделять особое внимание проверке при модифиации <em>expression</em>, потому что мы можем проверить только правильность синтаксиса при сохранении и не знаем что именно вернет измененный <em>Expression</em> при обработке реальных данных и к каким последсвиям это может привести.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Стоит помнить что каждый <em>Expression</em> предполагает множественное использование для различных заранее неизвестных наборов данных.</p>
+</div>
+<p>При создании Expression используются общие для всех Expression функции описанные в <strong>Functions Description</strong> и переменные подготовленные отдельно для каждого Expression.</p>
+<p><strong>Functions Description</strong> – справочная информация о всех доступных для использования функций с примерами их применения. Красные – фунции доступные из библиотеки ncalc (LINK!). Оранжевые – добавленные нами функции, в основном это фунции для работы с массивами.</p>
+</div>
+<div class="section" id="rs-espression">
+<h2>Rs Espression<a class="headerlink" href="#rs-espression" title="Permalink to this headline">¶</a></h2>
+<p>Выражение для расчета RS. Применяется при каждом расчете обновлении любых данных полученных от <em>Fitbit</em>.</p>
+<blockquote>
+<div><a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
+</div></blockquote>
+<p><em>Figure_11 - Rs Expression Page Interface</em></p>
+<dl class="docutils">
+<dt>Описание Rs Expression Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>поле ввода Expression, автоматически подсвечивает цветом переменные (синим), операторы (серым) и функции (красным или оранженым) при правильном вводе. Если введенная переменная или функция не подсветилась значит, скорее всего она введена неправильно</li>
+<li>эллемент для расчета RS. Данная страница содержит также все тестовые данные необходимые для расчета РС, поэтому при нажатии на calculate вы увидите тот RS который должен получиться при обработке этих ТЕСТОВЫХ данных. Данный эллемент необходим для того что бы можно было сразу проверить работоспособность Expression перед ее сохранением.</li>
+<li>сохранение expression для дальнейших расчетов с ее использованием на реальных данных пользователей</li>
+<li>результат расчета Expression для тестовых данных, после нажатия на calculate</li>
+<li>множетели для определенных типов данных, для реальных данных редактируются на странице Study / edit.</li>
+<li>цели для определенных типов данных, для реальных данных редактируются на странице Study / edit либо на странице group view для индивидуальных целей.</li>
+<li>дополнительные переменные, для реальных данных редактируются на странице Study / edit.</li>
+<li>данные пользователя. Реальные данные получаются от фитбит.</li>
+</ol>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">5,6,7,8 - для тестирования они могут быть изменены на текущей странице. Кодовое название каждой переменной дано в квадратных собках синим цветом. Изменение значений переменных не приведет к изменению анологичных значений на портале, и дано исключительно для тестирования.</p>
+</div>
+</div>
+<div class="section" id="optimazed-expression">
+<h2>Optimazed Expression<a class="headerlink" href="#optimazed-expression" title="Permalink to this headline">¶</a></h2>
+<p>Также называется Group Optimazed Expression.</p>
+<p>Данный <em>Expression</em> используется при генерации <em>Intervention</em> для групп с групповой оптимизацией. Каждый день в 12 часов ночи выбираются все пользователи группы для которых в этот день должен быть сгенерирован <em>Intervention</em>, для этих пользователей собираются дополнительные данные и формируются переменные для <em>Expression</em>.</p>
+<p>Для формирования списска <em>Intervention</em> которые будут сгенерированы для данный группы происходится перебор некоторых возможных состояний, для каждого из каторых вычисляется результат <em>Expression</em>. Состояние по сути является упорядоченным списком порядковых номеров типов <em>Intervention</em>. Перебирается множество состояний в поиске лучшего состояния. В идеальном случае для получения лучшего состояния должны быть перебраны все возможные комбинации <em>Intervention</em> для каждого <em>Participant</em>, но так как для большого количества <em>Participant</em> число комбинаций будет насколько велико что не может быть расчитано за разумное время, то мы применяет приблеженный метод поиска лучшего значения.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Результатом <em>Expression</em> предпологается значение для состояния (state), которое станем наибольшим для наилучшего результата.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Обратите внимание что проверка на соответсвие ограничению по максимальному времени включено в <em>Expression</em> и соответсвенно может быть проигнорировано.</p>
+</div>
+<p>Например при генерации <em>Intervention</em> для 4ых человек лучшим состоянием стало - [1,0,0,2], что означает что для первого <em>Participant</em> будет выбран <em>Intervention</em> первого типа (из списка всех типов <em>Intervention</em> study в которой состоит <em>Participant</em>), для второго <em>Participant</em> будет выбран <em>Intervention</em> нулевого типа (нумерация начинается с нуля), для третьего <em>Participant</em> буде выбран <em>Intervention</em> нулевого типа, для четвертого <em>Participant</em> буде выбран <em>Intervention</em> второго типа. Затем на основе состояние будет сформирован список <em>Intervention</em>, если нулевой тип – автотекст (например), первый тип – текстлинициста, второй тип – звонок. в результате получится 2 автотекста, 1 звонок и 1 текстклинициста.</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
+<p><em>Figure_11 - Optimazed Expression Edit Page Interface</em></p>
+<dl class="docutils">
+<dt>Описание Optimazed Expression Edit Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>поле ввода Expression, автоматически подсвечивает цветом переменные (синим), операторы (серым) и функции (красным или оранженым) при правильном вводе. Если введенная переменная или функция не подсветилась значит, скорее всего она введена неправильно</li>
+<li>сохранение Expression для дальнойшего использование при генерации <em>Intervention</em></li>
+<li>подсказки</li>
+<li>список переменных с их кратким описанием</li>
+<li>примеры функций</li>
+</ol>
+</dd>
+</dl>
+</div>
+<div class="section" id="non-optimazed-expression">
+<h2>Non-Optimazed Expression<a class="headerlink" href="#non-optimazed-expression" title="Permalink to this headline">¶</a></h2>
+<p>Также называется Individual Optimazed Expression.</p>
+<p>Данный <em>Expression</em> применятся для генерации <em>Intervention</em> у групп с индивидуальной оптимизацией. Данное <em>Expression</em> обрабатывается индивидуально для каждого пользователя. Результатом выполнения должен быть id <em>Intervention</em> желаемого типа, один из <strong>StudyInterventionIds</strong>. Данные <strong>StudyInterventionIds</strong> соотвествую тем типам <em>Intervention</em> соответсвующие типам Study с которой связана выбранная <em>Study Group</em>.</p>
+<p>Rs которые содержится в переменной <strong>RScores</strong> должен соответсвовать RS отображаемому на страницах study coordinator view and group view (LINK!).</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
+<p><em>Figure_11 - Non-Optimazed Expression Edit Page Interface</em></p>
+<dl class="docutils">
+<dt>Описание Non-Optimazed Expression Edit Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>поле ввода Expression, автоматически подсвечивает цветом переменные (синим), операторы (серым) и функции (красным или оранженым) при правильном вводе. Если введенная переменная или функция не подсветилась значит, скорее всего она введена неправильно</li>
+<li>сохранение Expression для дальнойшего использование при генерации интервеншенов</li>
+<li>список переменных с их кратким описанием</li>
+<li>примеры функций</li>
+</ol>
+</dd>
+</dl>
+<p><strong>Разобраться и описать примеры</strong></p>
 </div>
 </div>
 
@@ -181,10 +268,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Intervention.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Intervention.html" class="btn btn-neutral float-right" title="Interventions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Study.html" class="btn btn-neutral" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Study.html" class="btn btn-neutral" title="Study" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

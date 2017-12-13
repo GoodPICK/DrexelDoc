@@ -36,7 +36,7 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="test 1 documentation" href="../index.html"/>
-        <link rel="next" title="Installation" href="Study.html"/>
+        <link rel="next" title="Study" href="Study.html"/>
         <link rel="prev" title="Administration" href="Administration.html"/> 
 
   
@@ -98,9 +98,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#group-view">Group View</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Study.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Expression.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Intervention.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Study.html">Study</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Expression.html">Expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intervention.html">Interventions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Export.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Report.html">Installation</a></li>
 </ul>
@@ -170,36 +170,42 @@
 <h1>View’s<a class="headerlink" href="#view-s" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="participant-view">
 <h2>Participant View<a class="headerlink" href="#participant-view" title="Permalink to this headline">¶</a></h2>
-<p>дописать описание</p>
+<p>Главная страница портала. Предназначена для визуализации данных полученных от <em>Fitbit</em>. Также содержит эллементы для удобного выбора <em>Participant</em> и список их <em>Intervention</em>.</p>
 <a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
-<p><em>Participant View Page Interface</em></p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>краткая учетная информация пользователя, так же содежит ссылку на групп въю</li>
-<li>выбор study к группе которого привязан пользователь</li>
-<li>выбор координатора группы к которой привязан пользоватеоей</li>
-<li>список всех партиципантов выбранного клинишина в данной стади</li>
+<p><em>Figure 1 - Participant View Page Interface</em></p>
+<dl class="docutils">
+<dt>Описание Participant View Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>краткая учетная информация пользователя, также содежит ссылку на Group View (LINK!)</li>
+<li>выбор <em>study</em> к группе которого привязан пользователь</li>
+<li>выбор координатора <em>Study Group</em> к которой привязан пользоватеоей</li>
+<li>список всех <em>Participants</em> выбранного <em>Clinician</em> в данной <em>Study</em></li>
 <li>выбор временного периода для отображения данных</li>
-<li>график веса, полученного от фитбит</li>
-<li>график еды, полученной от фитбита. Так же есть возможность просмотреть детализированный лог еды за этот день по щелчку на соответсвующем дне графика. (ниже картинка)</li>
-<li>график активности полученный от фитбита. Так же есть возможность просмотреть детализированный лог активности за этот день по щелчку на соответсвующем дне графика. (ниже картинка)</li>
-<li>ссылка на настройки интервеншенов</li>
-<li>поиск по таблице интервеншенов</li>
-<li>таблица интервеншенов</li>
-<li>ссылка на обработку интервеншена, с пометкой о том был ли обработан интервеншен (зеленое) или нет (красное)</li>
+<li>график веса, полученного от <em>Fitbit</em></li>
+<li>график еды, полученной от <em>Fitbit</em>. Также есть возможность просмотреть детализированный список еды за этот день по щелчку на соответсвующем дне графика. (смотрите <em>Figure 2</em>)</li>
+<li>график активности полученный от <em>Fitbit</em>. Также есть возможность просмотреть детализированный список активности за этот день по щелчку на соответсвующем дне графика. (смотрите <em>Figure 3</em>)</li>
+<li>ссылка на настройки <em>Inteventions</em></li>
+<li>поиск по таблице <em>Inteventions</em></li>
+<li>таблица <em>Inteventions</em> пользователя</li>
+<li>ссылка на обработку данного <em>Intevention</em>, с пометкой о том был ли обработан <em>Intevention</em> (зеленое) или нет (красное)</li>
 </ol>
-</div></blockquote>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">В таблице <em>Inteventions</em> на данной странице не отображатся <em>Inteventions</em> типа <em>Autotext</em>, время отправки которых еще не наступило, и <em>Inteventions</em> типа <em>Notification</em></p>
+</div>
 <a class="reference external image-reference" href="../../_static/Images/Figure_10.png"><img alt="../_images/Figure_10.png" src="../_images/Figure_10.png" /></a>
-<p><em>Окно с детальным логом еды, вызванное при клике на графике калорий</em></p>
+<p><em>Figure 2 - Окно с детальным логом еды, вызванное при клике на графике калорий</em></p>
 <a class="reference external image-reference" href="../../_static/Images/Figure_11.png"><img alt="../_images/Figure_11.png" src="../_images/Figure_11.png" /></a>
-<p><em>Окно с детальным логом активности, вызванное при клике на графике активности</em></p>
+<p><em>Figure 3 - Окно с детальным логом активности, вызванное при клике на графике активности</em></p>
 </div>
 <div class="section" id="study-coordinator-view">
 <h2>Study Coordinator View<a class="headerlink" href="#study-coordinator-view" title="Permalink to this headline">¶</a></h2>
-<p>Страница содержит  агрегированные данные полученные от фитбита, а также интервеншенах пользователя.</p>
+<p>Страница содержит агрегированные данные полученные от <em>Fitbit</em>, а также агрегированные данные о <em>Inteventions</em> пользователя.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Данные выбираются для периода выбранного в элементах управления страницей, по умолчанию это период начинающийся с даты месяц назад и текущей датой.</p>
+<p class="last">Данные выбираются для периода выбранного в элементах управления страницей, по умолчанию это период охватывает 30 дней заканчивая текущим днем.</p>
 </div>
 <dl class="docutils">
 <dt>Все данные представлены в виде трех таблиц:</dt>
@@ -222,7 +228,7 @@
 </ul>
 </dd>
 </dl>
-<p>Таблица <strong>Block data</strong> - список <em>интервеншенов</em> с соответсвубщими им временными периодами (блоками), с общими данными для каждого.</p>
+<p>Таблица <strong>Block data</strong> - список <em>интервеншенов</em> с соответсвующими им временными периодами (блоками), с общими данными для каждого.</p>
 <dl class="docutils">
 <dt>Колонки таблицы <strong>Block data</strong>:</dt>
 <dd><ul class="first last simple">
@@ -235,57 +241,68 @@
 </ul>
 </dd>
 </dl>
-<p>Таблица <strong>Raw data</strong> - агрегированные по дням данные полученные от фитбита.</p>
+<p>Таблица <strong>Raw data</strong> - агрегированные по дням данные полученные от <em>Fitbit</em>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Данные указываются только для тех дней для оторых получены хоть какие то данные.</p>
+<p class="last">Данные в данной таблице указываются только для тех дней для которых получены хоть какие то данные от <em>Fitbit</em>.</p>
 </div>
 <dl class="docutils">
 <dt>Колонки таблицы <strong>Raw Data</strong>:</dt>
 <dd><ul class="first last simple">
 <li><strong>Date</strong> – дата за каторую агрегируются данные</li>
-<li><strong>Weight</strong> – последний вес полученный от фитбит</li>
-<li><strong>Food logged</strong> – количество еды (записей) полученных от фитбит</li>
-<li><strong>Food calories logged</strong> – суммарная калорийность еды полученной от фитбит</li>
+<li><strong>Weight</strong> – последний вес полученный от <em>Fitbit</em></li>
+<li><strong>Food logged</strong> – количество еды (записей) полученных от <em>Fitbit</em></li>
+<li><strong>Food calories logged</strong> – суммарная калорийность еды полученной от <em>Fitbit</em></li>
 <li><strong>Calories goal</strong> – цель по калориям, устанавливается в настройках <em>Study</em> к группе которого привязан пользователь</li>
-<li><strong>Steps</strong> – количество шагов полученных в активности от фитбит</li>
+<li><strong>Steps</strong> – количество шагов полученных в активности от <em>Fitbit</em></li>
 <li><strong>Steps goal</strong> - цель по шагам, устанавливается в настройках <em>Study</em> к группе которого привязан пользователь</li>
-<li><strong>Activity minutes</strong> – сумма минут активности полученных в активности от фитбит</li>
+<li><strong>Activity minutes</strong> – сумма минут активности полученных в активности от <em>Fitbit</em></li>
 <li><strong>Activity minutes goal</strong> - цель по минутам активности, устанавливается в настройках <em>Study</em> к группе которого привязан пользователь</li>
-<li><strong>PA goal freq</strong> – устнавливается значение 1 если в этот день данные по активности не равны нулю, тип активности выбирается в зависимости от значения <strong>StudyAlgorithm</strong> (устанавливается в настройках <em>Study</em> к группе которого привязан пользователь)</li>
-<li><strong>Weight freq</strong> – устанавливается значение 1 если данные по весу за этот день больше нуля</li>
+<li><strong>PA goal freq</strong> – устнавливается значение 1 если в этот день данные по активности больше или равны цели соответствующего типа активности, тип активности выбирается в зависимости от значения <strong>StudyAlgorithm</strong> (устанавливается в настройках <em>Study</em> к группе которого привязан пользователь)</li>
+<li><strong>Weight freq</strong> – устанавливается значение 1 если полученны данные о весе за этот день</li>
 <li><strong>Food trak freq</strong> – устанавливается значение 1 если количество записей еды за этот день больше нуля</li>
-<li><strong>Cal goal freq</strong> – устанавливается значение 1 если сумма калорий всех записей еды за этот день находится в промежутке между <strong>Minimum Reported Calories</strong> и <strong>Calories Goal</strong>, <strong>Minimum Reported Calories</strong> устанавливается в настройках Study к группе которого привязан пользователь</li>
-<li><strong>Weight Loss (1 day)</strong> -  потеря веса за этот день (относительно предыдущего дня, 0 если нет данных за этот день)</li>
+<li><strong>Cal goal freq</strong> – устанавливается значение 1 если сумма калорий всех записей еды за этот день находится в промежутке между <strong>Minimum Reported Calories</strong> и <strong>Calories Goal</strong> (<strong>Minimum Reported Calories</strong> устанавливается в настройках <em>Study</em> к группе которого привязан пользователь)</li>
+<li><strong>Weight Loss (1 day)</strong> -  потеря веса за этот день (относительно предыдущего дня, 0 если нет данных за этот или предыдущий день)</li>
 <li><strong>Weight Loss (7 day)</strong> -  потеря веса за эту неделю (относительно даты неделю назад, 0 если нет данных за этот день)</li>
 <li><strong>Weight Loss (14 day)</strong> -  потеря веса за две недели (относительно даты две недели назад, 0 если нет данных за этот день)</li>
-<li><strong>RS</strong> – Rs за этот день, данное значение хранится в базе данных и обновляется при каждом обновлении данных за этот день на основе expression указанного для <em>study</em> к группе которого привязан пользователь, если пользователь не привязан ни к одному <em>study</em>, то RS не может быть расчитан. Эти значения RS используются при расчете среднего RS для Intervention (для корректного отображения должнен быть выбран период охватывающий все интервеншены).</li>
+<li><strong>RS</strong> – Reward Score за этот день, данное значение хранится в базе данных и обновляется при каждом получении данных от <em>Fitbit</em> за этот день на основе RS expression указанного для <em>Study</em> к группе которого привязан пользователь, если пользователь не привязан ни к одному <em>Study</em>, то RS не может быть расчитан. Данные значения RS используются при расчете среднего RS для <em>Intervention</em> (для корректного отображения должнен быть выбран период охватывающий все интервеншены).</li>
 </ul>
 </dd>
 </dl>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Если <em>Participant</em> не состоит ни в одной <em>Study Group</em>, то RS для него не может быть расчитан.</p>
+</div>
 </div>
 <div class="section" id="group-view">
 <h2>Group View<a class="headerlink" href="#group-view" title="Permalink to this headline">¶</a></h2>
-<p>Страница Group view содержит список всех пользоватеелй группы study, с агригированными данными интервеншенов и индивидуальными целями пользователя.</p>
+<p>Страница Group view содержит список всех пользователей <em>Study Group</em>, с агригированными данными интервеншенов и индивидуальными целями пользователя.</p>
 <a class="reference external image-reference" href="../../_static/Images/Figure_12.png"><img alt="../_images/Figure_12.png" src="../_images/Figure_12.png" /></a>
-<ol class="arabic simple">
+<p><em>Figure 3 - Group View Interface</em></p>
+<dl class="docutils">
+<dt>Описание Group View Interface:</dt>
+<dd><ol class="first last arabic simple">
 <li>элемент для выбора выбор группы</li>
 <li>ссылка на редактировнаие группы</li>
 <li>сссылка на управление всеми группами Study к которой привязана группа</li>
 <li>ссылка на редактирование Study к которой привязана группа</li>
 <li>поиск по таблице с данными</li>
-<li>колона таблицы с именем пользователся, так же является ссылкой на страницу Participant view</li>
+<li>колона таблицы с именем пользователся, так же является ссылкой на страницу Participant view(LINK!)</li>
 <li>уникальный идентификатор пользователя, устанавливается на странице редактирования пользователя, может быть пустым</li>
 <li>колонка указывающая список всех типов интервеншенов с количеством интервеншенов каждого типа, учитываются только интервеншены которые были созданы когда пользователь находился в текущем study.</li>
-<li>колонка указывающая список всех типов интервеншенов с средним RS для каждого типа, учитываются только интервеншены которые были созданы когда пользователь находился в текущем study. Данные должны соответсвовать данным на странице Study Coordinator View (должен быть выбран период охватывающий все интервеншены)</li>
+<li>колонка указывающая список всех типов интервеншенов с средним RS для каждого типа, учитываются только интервеншены которые были созданы когда пользователь находился в текущем study. Данные должны соответсвовать данным на странице Study Coordinator View (должен быть выбран период охватывающий все интервеншены) (LINK!)</li>
 <li>колонка отображающая индивидуальные цели пользователя, а также эллементы управления ими</li>
 <li>указывает текущие цели пользователя по калориям и активности</li>
 <li>указывает источник целей (индивидуальные или Study)</li>
 <li>элемнт для вызова меню управления индивидуальными целями</li>
 </ol>
+</dd>
+</dl>
 <a class="reference external image-reference" href="../../_static/Images/Figure_13.png"><img alt="../_images/Figure_13.png" src="../_images/Figure_13.png" /></a>
 <p><em>Окно управления индивидуальными целями</em></p>
-<ol class="arabic simple">
+<dl class="docutils">
+<dt>Описание Окно управления индивидуальными целями:</dt>
+<dd><ol class="first last arabic simple">
 <li>индивидуальная цель по калориям, если не уставнолена 0</li>
 <li>цель по калориям соответсвующая цели по калориям Study в группе оторого состоит пользователь</li>
 <li>цель  по калориям полученная от фитбит, может менятся более 10 раз за день подробнее можно почитать на странице фитбит (ссылка)</li>
@@ -296,6 +313,8 @@
 <li>выбор типа цели  по минутам активности  который будет использоваться для пользователя</li>
 <li>сохранить изменения</li>
 </ol>
+</dd>
+</dl>
 </div>
 </div>
 
@@ -309,7 +328,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Study.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Study.html" class="btn btn-neutral float-right" title="Study" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="Administration.html" class="btn btn-neutral" title="Administration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

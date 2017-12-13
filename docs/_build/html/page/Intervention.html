@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; test 1 documentation</title>
+  <title>Interventions &mdash; test 1 documentation</title>
   
 
   
@@ -37,7 +37,7 @@
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="test 1 documentation" href="../index.html"/>
         <link rel="next" title="Installation" href="Export.html"/>
-        <link rel="prev" title="Installation" href="Expression.html"/> 
+        <link rel="prev" title="Expressions" href="Expression.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -91,12 +91,15 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Administration.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Views.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Study.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Expression.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#stable-release">Stable release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Administration.html">Administration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Views.html">View’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Study.html">Study</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Expression.html">Expressions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Interventions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#autotext">Autotext</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intervention-feed">Intervention Feed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interventions-setup">Interventions Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#all-sms-messages">All Sms Messages</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Export.html">Installation</a></li>
@@ -145,7 +148,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Installation</li>
+      <li>Interventions</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -164,10 +167,163 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="stable-release">
-<h2>Stable release<a class="headerlink" href="#stable-release" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="interventions">
+<h1>Interventions<a class="headerlink" href="#interventions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="autotext">
+<h2>Autotext<a class="headerlink" href="#autotext" title="Permalink to this headline">¶</a></h2>
+<p>Страница для задания правил и редактирования текста сообщений которые будут генерироваться автоматически для <em>Intervention</em> с типом автотекст.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Каждый текст будет отправлен как отдельное смс.</p>
+</div>
+<a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
+<p><em>Figure_11 - Autotexts Inteface Page</em></p>
+<dl class="docutils">
+<dt>Описание Autotexts Inteface Page:</dt>
+<dd><ol class="first last arabic simple">
+<li>выбор <em>Study</em></li>
+<li>эллемент для вызова меню управления правилами данного автотекста</li>
+<li>текст отсылаемый в случае отправи данного сообщения</li>
+<li><dl class="first docutils">
+<dt>общие правила отправки:</dt>
+<dd><ul class="first last">
+<li><strong>Active</strong> – делает данный текст активным или не активным, неактивные тексты неотсылаются даже при соблюдении всех остальных условий, активные - могут быть отосланы при соблюдении остальных условий</li>
+<li><strong>Always Send</strong> – добавляет текст к отправке даже если какие то другие условия не соблюдены (кроме Active, тоесть должны быть активны оба пункта чтобы сообщение было отправлено с 100% гарантией)</li>
+<li><strong>Send if any goal failed</strong> - добавляет текст к отправке если какое то из условий ниже невыполнено внезависимости от того используется оно или нет (что выбрано Done или Fail или DoNotUse)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>редактирование текста сообщения данного автотекста</li>
+<li><dl class="first docutils">
+<dt>группа настрое соответствующих целям study, для каждой настройки есть 3 варианта использования:</dt>
+<dd><ul class="first last">
+<li><strong>Done</strong> – возвращает <strong>true</strong> если цель выполнена</li>
+<li><strong>Fail</strong> – возвращает <strong>true</strong> если цель провалена</li>
+<li><strong>DoNotUse</strong> – возвращает <strong>true</strong> в любом случае, тоесть игнорируется</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>настройка указывающая пределы изменения веса в текущем периоде. Возвращает <strong>true</strong> если изменение веса прпадает в данные пределы. Если ничего не указывать то предел считается бесконечным.</li>
+</ol>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Для отправки сообщения каждого автотекста он должен быть отмечен как <strong>Active</strong> и все настройки из 6 и 7 группы должны возвращать состояние <strong>true</strong> или должен быть отмечен как <strong>Active</strong> и <strong>Always Send</strong>.</p>
+</div>
+<p>Для автотекста типа <strong>Summary</strong> окно настроек отличается</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
+<p><em>Figure_11 - Summary Autotext Interface</em></p>
+<dl class="docutils">
+<dt>Описание Summary Autotext Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>Summary <strong>Message Template</strong>.</li>
+<li>переменные значения которых будет подставлено в <strong>Message Template</strong></li>
+<li>общие правила отправки аналогичные подобным у других автотестов и описанные выше.</li>
+</ol>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">В данный момент <strong>Message Template</strong> в автотексте применяются только для типа <strong>Summary</strong>, но могут быть добавлены и к другим автотестам</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>Message Template</strong> – это значит что этот текст является заготовой для сообщения. <strong>Message Template</strong> имеет специальные метки (<strong>{1}</strong> - например) в которые будут подставлены подготовленные для него значения. Данные значения выбираются индивидуально для каждого пользователя.</p>
+</div>
+</div>
+<div class="section" id="intervention-feed">
+<h2>Intervention Feed<a class="headerlink" href="#intervention-feed" title="Permalink to this headline">¶</a></h2>
+<p>Страница для просмотра <em>Intervention</em> для всех <em>Participant</em> состоящих в <em>Study Group</em> у которых координатором является выбранный <em>Clinician</em>. По умолчанию <em>Intervention</em> отсортированы по дате отправки по убыванию.</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_14.png"><img alt="../_images/Figure_14.png" src="../_images/Figure_14.png" /></a>
+<p><em>Figure_14 - Summary Autotext Interface</em></p>
+<dl class="docutils">
+<dt>Описание Summary Autotext Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>Выбор <em>Clinician</em> для которого будут показаны <em>Intervention</em> связанных <em>Participant</em></li>
+<li>Элемент для вызова окна ручного добавления <em>Intervention</em></li>
+<li>Поле с именем <em>Participant</em> для которого создан <em>Intervention</em>, также является ссылкой на страницу Participant View (LINK!)</li>
+<li>Поле с ExternalId <em>Participant</em> для которого создан <em>Intervention</em></li>
+<li>Date and Time of <em>Intervention</em></li>
+<li><em>Intervention</em> Type</li>
+<li>Study в группе которого состоит <em>Participant</em></li>
+<li><em>Study Group</em> в которой состоит <em>Participant</em></li>
+<li>Укороченный Текст Сообщения Отправленного в данном <em>Intervention</em></li>
+<li>Елеемент добавляемый к укороченным сообщения для просмотра полного текста сообщения</li>
+<li>Поле указывающее был ли создан данный <em>Intervention</em> вручную</li>
+<li>Елеемент добавляемый к созданым вручную <em>Intervention</em>, указыващий кем и когда был добавлен</li>
+<li>Статус <em>Intervention</em></li>
+<li>Ссылка на страницу обработки данного <em>Intervention</em>, для каждого типа своя страница</li>
+<li>Елеемент удаления <em>Intervention</em></li>
+</ol>
+</dd>
+<dt>У <em>Intervention</em> может быть 3 статуса:</dt>
+<dd><ol class="first last arabic simple">
+<li><strong>Delivered</strong> - обработанные <em>Intervention</em></li>
+<li><strong>Not Delivered</strong> - необработанные <em>Intervention</em></li>
+<li><strong>Prepared</strong> - специальный статус для еще неотправленных Autotexts, после отправки он будет изменен в зависимости от результата на <strong>Delivered</strong> или <strong>Not Delivered</strong></li>
+</ol>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">На данной странице отображаются <em>Intervention</em> всех типов включая Notification и еще неотправленные Autotexts</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">тип Autotexts не имеет страницы для обработки, поэтому Елеемент (пункт 14) помечен как недоступный</p>
+</div>
+<a class="reference external image-reference" href="../../_static/Images/Figure_15.png"><img alt="../_images/Figure_15.png" src="../_images/Figure_15.png" /></a>
+<p><em>Figure_14 - Manual Add Intervention Window</em></p>
+<dl class="docutils">
+<dt>Описание Manual Add Intervention Window:</dt>
+<dd><ol class="first last arabic simple">
+<li>Доступные для выбора <em>Participant</em>, состоящие в какой либо <em>Study Group</em></li>
+<li>Доступные для выбора <em>Intervention</em> Type, заполняются в зависимости от <em>Study Group</em> выбранного в пункте 1 <em>Participant</em></li>
+<li>Сообщение для создаваемого <em>Intervention</em></li>
+</ol>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">При создании <em>Intervention</em> типа автотекст, текст сообщения будет создан в момент отправки на основе автотекстов <em>Study Group</em> к которой привязан выбранный <em>Participant</em></p>
+</div>
+<a class="reference external image-reference" href="../../_static/Images/Figure_17.png"><img alt="../_images/Figure_17.png" src="../_images/Figure_17.png" /></a>
+</div>
+<div class="section" id="interventions-setup">
+<h2>Interventions Setup<a class="headerlink" href="#interventions-setup" title="Permalink to this headline">¶</a></h2>
+<p>Страница предназначена для создания и изменения правил по которым будут выбираться дни создания <em>Intervention</em>, и время создания <em>Intervention</em>.</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_16.png"><img alt="../_images/Figure_16.png" src="../_images/Figure_16.png" /></a>
+<p><em>Figure_16 - Interventions Setup Page Interface</em></p>
+<dl class="docutils">
+<dt>Описание Interventions Setup Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>Выбор <em>Participant</em> для которого будут изменяться настройки</li>
+<li>Группа элементов для выбора дней недели в которые будут создаваться <em>Intervention</em></li>
+<li>Дата начала создания <em>Intervention</em>, до этой даты <em>Intervention</em> создаваться не будут</li>
+<li>Дата окончания создания <em>Intervention</em>, после этой даты <em>Intervention</em> создаваться не будут</li>
+<li>Время создания <em>Intervention</em>, в это время будут отправляться <em>Intervention</em> типа autotext и создаваться <em>Intervention</em> для <em>Study Group</em> у которых не настроены <em>Clinician Schedule</em></li>
+<li>Календарь для визуального отображения дней в которые будут отправлены <em>Intervention</em>, также служит елементом для ручной манипуляции днями в которые будут или не будут созданы интервеншены.</li>
+</ol>
+</dd>
+</dl>
+<p>Используя календарь (пунтк 6) можно исключить день создания <em>Intervention</em>, для этого необходимо кликнуть по соответсвующему дню, если он окрашен зеленым. В случае успеха выбранный день календаря должен стать красным, что означает что в этот день портал не создаст для него <em>Intervention</em></p>
+<p>Также можно добавить день в который будет создан <em>Intervention</em> даже если настройки этого не предусматривают,для этого необходимо кликнуть по соответсвующему дню, если он окрашен белым. В случае успеха выбранный день календаря должен стать синим, что означает что в этот день портал принудительно создаст <em>Intervention</em></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">В отличии от ручного добавления <em>Intervention</em> использование данного способа позволит порталу самостоятельно выбрать тип интервеншена так как если бы этот день был указан в настройках</p>
+</div>
+</div>
+<div class="section" id="all-sms-messages">
+<h2>All Sms Messages<a class="headerlink" href="#all-sms-messages" title="Permalink to this headline">¶</a></h2>
+<p>Данная страница служит для отображения всех сообщений полученных и отправленных <em>Participant</em>. Также имеется возможность отправки сообщений с этой страницы.</p>
+<p>Страница очень похожа на страницу для обработки <em>Intervention</em> типа Text Exchange, но в отличие от нее содержит все сообщения. Для создания  Страницы было несколько причин. Во первых потому что раньше была возможность просмотра только тех сообщений которые попадали в определенный период связанный с <em>Intervention</em> типа Text Exchange, но данный период имел весьма искуственные ограничения, потому что мы не знаем когда точно ответят <em>Participant</em>, и какой либо ответ мог попасть не в тот период. Во вторых на практике выяснилось что <em>Participant</em> могут отвечать не только на <em>Intervention</em> типа Text Exchange и данные сообщения небыло возможности просмотреть.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Выбор <em>Participant</em> которому принадлежит сообщение выбирается на основе номера телефона указанного для этого <em>Participant</em>, поэтому при смене номера сообщения от другого номера телефона “теряются”. на самом деле данные сообщения могут быть снова просмотрены при обратной смене номера.</p>
+</div>
 </div>
 </div>
 
@@ -184,7 +340,7 @@
         <a href="Export.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Expression.html" class="btn btn-neutral" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Expression.html" class="btn btn-neutral" title="Expressions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

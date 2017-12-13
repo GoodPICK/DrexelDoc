@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; test 1 documentation</title>
+  <title>Study &mdash; test 1 documentation</title>
   
 
   
@@ -36,8 +36,8 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="test 1 documentation" href="../index.html"/>
-        <link rel="next" title="Installation" href="Expression.html"/>
-        <link rel="prev" title="Installation" href="Views.html"/> 
+        <link rel="next" title="Expressions" href="Expression.html"/>
+        <link rel="prev" title="View’s" href="Views.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -91,14 +91,15 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Administration.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Views.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#stable-release">Stable release</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Administration.html">Administration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Views.html">View’s</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Study</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#list-of-studies">List of studies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#groups">Groups</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Expression.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Intervention.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Expression.html">Expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intervention.html">Interventions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Export.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Report.html">Installation</a></li>
 </ul>
@@ -145,7 +146,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Installation</li>
+      <li>Study</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -164,10 +165,93 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="stable-release">
-<h2>Stable release<a class="headerlink" href="#stable-release" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="study">
+<h1>Study<a class="headerlink" href="#study" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="list-of-studies">
+<h2>List of studies<a class="headerlink" href="#list-of-studies" title="Permalink to this headline">¶</a></h2>
+<p>Страница содержащая список всех активных Study, а также элементы управления ими.</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
+<p><em>Figure_11 - List of studies Page Interface</em></p>
+<dl class="docutils">
+<dt>Описание List of studies Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>количество активных <em>participants</em> во всех <em>Study Group</em> выбранной <em>study</em></li>
+<li>количество групп в этом <em>study</em>, так же является ссылкой на страницу управления <em>Study Group</em></li>
+<li>имя координатора группы</li>
+<li>ссылка на страницу управления <em>Study Group</em></li>
+<li>ссылка на страницу редактирования Expression для данной группы, в зависимости от выбранного типа группы</li>
+<li>экспорт block data для данной <em>study</em></li>
+<li>экспорт raw data для данной <em>study</em></li>
+<li>ссылка на страницу управления <em>Study Group</em></li>
+<li>архивирование <em>study</em></li>
+</ol>
+</dd>
+</dl>
+<a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
+<p><em>Figure_11 - Create|Update Study Page Interface</em></p>
+<dl class="docutils">
+<dt>Описание Create|Update Study Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>название <em>study</em></li>
+<li>координатор <em>study</em></li>
+<li>константа использующаяся для обработки данных на странице study coordinator view(LINK!)</li>
+<li>константа доступная для использования в rs expression (<strong>[DW]</strong>)</li>
+<li>константа доступная для использования в rs expression (<strong>[MCAL]</strong>), также используеся при расчета <strong>cal frec</strong> на странице study coordinator view(LINK!)</li>
+<li>константы являющиеся множителями для соответсвущих целей при расчете <strong>RS</strong>, доступны для использования в rs expression(LINK!) как <strong>Outcome Variables</strong>, в случае если значение не указано считается равным нулю</li>
+<li>как минимум одно из этих значений должно быть указано</li>
+<li>цели, так же используются при расчете RS, также отображаются на странице  study coordinator view(LINK!) и странице group view(LINK!) для тех у кого не установлены индивидуальные цели</li>
+<li>список уже добавленных интервеншенов, <strong>Cost</strong> – константа используемая в Optimazed Expression(LINK!), <strong>Time</strong> – время которое отводится на аждый интервеншен данного типа. Из этого списка так же производится удаление типов.</li>
+<li>добавление типа интервеншена который будет использоваться для данной <em>study</em></li>
+<li>Выбор типа <strong>Study Algorithm</strong>, который доступен для использования в расчете RS (<strong>[SAS]</strong> или <strong>[SAM]</strong>)</li>
+</ol>
+</dd>
+</dl>
+</div>
+<div class="section" id="groups">
+<h2>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h2>
+<p>Страница для управления группами стади.</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
+<p><em>Figure_11 - Groups Page Inteface</em></p>
+<dl class="docutils">
+<dt>Описание - Groups Page Inteface:</dt>
+<dd><ol class="first last arabic simple">
+<li>ссылка на страницу создания новой <em>Study Group</em></li>
+<li>колонка таблицы с названием группы, также является ссылкой на страницу group view для данный <em>Study Group</em></li>
+<li>тип <em>Study Group</em>, определяет способ оптимизации <em>Intervention</em></li>
+<li>количество <em>Participant</em> состоящих в группе</li>
+<li>имя координатора группы, также отобращается как клиницист для партиципантов состоящих в группе</li>
+<li>редактирование данной <em>Study Group</em></li>
+<li>экспорт списка <em>Participant</em> данной <em>Study Group</em></li>
+<li>ссылка на страницу редактирования expression оптимизации для данного типа группы,</li>
+<li>еще одна ссылка на group view для данный <em>Study Group</em></li>
+</ol>
+</dd>
+</dl>
+<p>Study Group Add|Update Page</p>
+<p>На данной странице производится управление членами группы, редактирование основных параметров группы, а так же управление рассписанием для данной группы.</p>
+<p>Активное рассписание подразумевает то что для этой группы интервеншены будут создаваться со смещением по времени таким образом чтобы не допустить пересещение времени отведенного для данной группы (max time), а также создание особых автоматичеси генерируеммых текстов (notification) для предварительного уведомления партиципанта о предстоящем интервеншене.</p>
+<p>В случае если рассписание не активно интервеншены будут создаваться в соотвестсвии с временем указанным в Intervention setup данного партиципанта, даже если установлено одно время для всех. Нотификации создаваться не будут.</p>
+<a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
+<p><em>Figure_11 - Study Group Add|Update Page Interface</em></p>
+<dl class="docutils">
+<dt>Описание Study Group Add|Update Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>название <em>Study Group</em></li>
+<li>тип <em>Study Group</em></li>
+<li>время в минутах, используемое в Group Optimization для ограничения суммарного времени всех интервеншенов которые будут созданы для этой <em>Study Group</em></li>
+<li>координатор исследования, также отображается как <em>Clinician</em> для <em>Participants</em> являющихся членами <em>Study Group</em></li>
+<li>эллемент для включения <em>Participant</em> в <em>Study Group</em></li>
+<li>эллемент для управление использованием расписания <em>Clinician</em></li>
+<li>Notification <strong>Message Template</strong></li>
+<li>время отправки нотификации для <em>Participants</em></li>
+<li>данные которые могут быть использованы в Notification <strong>Message Template</strong> (сюда так же могут быть включены практически любые другие данные)</li>
+</ol>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><strong>Message Template</strong> – это значит что этот текст является заготовой для сообщения. <strong>Message Template</strong> имеет специальные метки (<strong>{1}</strong> - например) в которые будут подставлены подготовленные для него значения. Данные значения выбираются индивидуально для каждого пользователя.</p>
+</div>
 </div>
 </div>
 
@@ -181,10 +265,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Expression.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Expression.html" class="btn btn-neutral float-right" title="Expressions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Views.html" class="btn btn-neutral" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Views.html" class="btn btn-neutral" title="View’s" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

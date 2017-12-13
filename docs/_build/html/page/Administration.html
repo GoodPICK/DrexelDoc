@@ -36,7 +36,7 @@
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="test 1 documentation" href="../index.html"/>
-        <link rel="next" title="Installation" href="Views.html"/>
+        <link rel="next" title="View’s" href="Views.html"/>
         <link rel="prev" title="Welcome to DrexelDoc’s documentation!" href="../index.html"/> 
 
   
@@ -92,18 +92,18 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Administration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Описание ролей</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#role-description">Role Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#administrators">Administrators</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clinicians">Clinicians</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#participants">Participants</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#clinician-schedule">Clinician Schedule</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#use-recovery">Use recovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-recovery">User Recovery</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Views.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Study.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Expression.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Intervention.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Views.html">View’s</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Study.html">Study</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Expression.html">Expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Intervention.html">Interventions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Export.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Report.html">Installation</a></li>
 </ul>
@@ -171,18 +171,18 @@
             
   <div class="section" id="administration">
 <h1>Administration<a class="headerlink" href="#administration" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id1">
-<h2>Описание ролей<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p><strong>Master</strong> - nак как на портале отключена регистрация, то для первоначального создания пользователей создан специальный аккаунт - master account. Данный аккаунт обладает теми же привилегиями что и администраторы, но не может быть удален или изменен.</p>
+<div class="section" id="role-description">
+<h2>Role Description<a class="headerlink" href="#role-description" title="Permalink to this headline">¶</a></h2>
+<p><strong>Master</strong> - nак как на портале отключена регистрация, то для первоначального создания пользователей создан специальный аккаунт - master account. Данный аккаунт обладает теми же привилегиями что и <em>Administrator</em>, но не может быть удален или изменен.</p>
 <dl class="docutils">
 <dt><strong>Administrator</strong> - обладает полным доступом ко всем функциям портала:</dt>
 <dd><ul class="first last simple">
 <li>Просмотр, создание и редактирование данных всех <em>Study</em></li>
-<li>Просмотр, создание и редактирование настроек Interventions</li>
-<li>Просмотр, создание и редактирование расписания <strong>Clinician</strong></li>
-<li>Просмотр, создание и редактирование пользователей (включая администраторов)</li>
+<li>Просмотр, создание и редактирование настроек <em>Interventions</em></li>
+<li>Просмотр, создание и редактирование расписания <em>Clinician</em></li>
+<li>Просмотр, создание и редактирование пользователей (включая <em>Administrators</em>)</li>
 <li>Просмотр, создание и редактирование автоматических текстов</li>
-<li>Просмотр данных ВСЕХ <strong>Participant</strong></li>
+<li>Просмотр данных ВСЕХ <em>Participant</em></li>
 <li>Export</li>
 <li>Report</li>
 </ul>
@@ -190,108 +190,133 @@
 </dl>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">В данный момент любой администратор может добавить другого администратора.</p>
+<p class="last">В данный момент любой <em>Administrator</em> может добавить или заархивировать другого <em>Administrator</em>.</p>
 </div>
-<p><strong>Clinician</strong> – роль с ограниченными возможностями. Не может добавлять и редатировать пользователей. Просматривать данные Participant’s не входящих в группы в которых является руоводителем.</p>
-<p><strong>Participant</strong> – данные пользователи в данный момент не имеют возможности авторизации на портале. Являются объектами обработки данных.</p>
+<p><strong>Clinician</strong> – роль с ограниченными возможностями.</p>
+<dl class="docutils">
+<dt>Ограничения:</dt>
+<dd><ul class="first last simple">
+<li>Не может добавлять и редатировать пользователей.</li>
+<li>Просматривать данные <em>Participants</em> не входящих в группы в которых является руководителем.</li>
+<li>Просмотр, создание и редактирование настроек <em>Interventions</em> (уточнить)</li>
+<li>Просмотр, создание и редактирование данных всех <em>Study</em> (уточнить)</li>
+<li>Просмотр, создание и редактирование автоматических текстов (уточнить)</li>
+<li>Export (уточнить)</li>
+<li>Report (уточнить)</li>
+</ul>
+</dd>
+</dl>
+<p><strong>Participant</strong> – данные пользователи в данный момент не имеют возможности авторизации на портале. Являются объектами для обработки данных.</p>
 </div>
 <div class="section" id="administrators">
 <h2>Administrators<a class="headerlink" href="#administrators" title="Permalink to this headline">¶</a></h2>
 <p>Управление пользователями с ролью Administrator осуществляется на странице <a class="reference external" href="http://drexel.azurewebsites.net/Admin/Administrators">Administrators</a>.</p>
 <a class="reference external image-reference" href="../../_static/Images/Screenshot_1.png"><img alt="../_images/Screenshot_1.png" src="../_images/Screenshot_1.png" /></a>
-<p><em>Administrators Page Interface</em></p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>Создание нового адм</li>
-<li>востановление заархивированных администраторов</li>
-<li>редактирование выбранного пользователя</li>
-<li>архивирование выбраного пользователя</li>
+<p><em>Figure 1 - Administrators Page Interface</em></p>
+<dl class="docutils">
+<dt>Описание Administrators Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>Создание нового пользователя</li>
+<li>Востановление заархивированных ранее пользователя</li>
+<li>Редактирование выбранного пользователя</li>
+<li>Архивирование выбраного пользователя</li>
 </ol>
-</div></blockquote>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Заархивированные адм не имеют возможности авторизоваться на портале, а так же не доступны для назначения координаторами исследования. Позднее они могут быть восстановлены (Смотрите пункт 3)</p>
-</div>
+</dd>
+</dl>
 </div>
 <div class="section" id="clinicians">
 <h2>Clinicians<a class="headerlink" href="#clinicians" title="Permalink to this headline">¶</a></h2>
-<p>Управление пользователями с ролью Clinician осуществляется на странице Clinicains.</p>
+<p>Управление пользователями с ролью <em>Clinician</em> осуществляется на странице <a class="reference external" href="http://drexel.azurewebsites.net/Admin/Clinicians">Clinicians</a>.</p>
 <a class="reference external image-reference" href="../../_static/Images/Figure_3.png"><img alt="../_images/Figure_3.png" src="../_images/Figure_3.png" /></a>
-<p><em>Clinicians Page Interface</em></p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>создание нового клин</li>
-<li>востановление клин</li>
-<li>поиск по всем полям актив клин</li>
-<li>редактирование</li>
-<li>архивирование</li>
+<p><em>Figure 2 - Clinicians Page Interface</em></p>
+<dl class="docutils">
+<dt>Описание Clinicians Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>Создание нового пользователя</li>
+<li>Востановление заархивированных ранее пользователя</li>
+<li>Редактирование выбранного пользователя</li>
+<li>Архивирование выбраного пользователя</li>
 </ol>
-</div></blockquote>
+</dd>
+</dl>
 </div>
 <div class="section" id="participants">
 <h2>Participants<a class="headerlink" href="#participants" title="Permalink to this headline">¶</a></h2>
-<p>Управление пользователями с ролью Participant осуществляется на странице Participants.</p>
+<p>Управление пользователями с ролью <em>Participant</em> осуществляется на странице <a class="reference external" href="http://drexel.azurewebsites.net/Admin/Participants">Participants</a>.</p>
 <a class="reference external image-reference" href="../../_static/Images/Figure_4.png"><img alt="../_images/Figure_4.png" src="../_images/Figure_4.png" /></a>
-<p><em>Participants Page Interface</em></p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>создание нового пользователя</li>
-<li>востановление заархивированных</li>
-<li>функция импорта ( массового добавления пользователей (возможно устарело))</li>
-<li>поиск по всех пользователям</li>
-<li>Поля имени participant, так же является ссылкой на страницу Participant View (LINK!)</li>
-<li>Поле ExternalId, может содержать любое значение однозначно индетифицируещее пользователя или ничего</li>
-<li>Координатор группы в которой состоит Part</li>
-<li>Название группы в которой состоит парт, также является ссылкой на Group View (link)</li>
-<li>показывает привязан ли  данному пользователю аккаунт фитбита</li>
-<li>редактирование пользователя</li>
-<li>архивирование</li>
-<li>привязка аккаунта фитбит к данному пользователю</li>
-</ol>
-</div></blockquote>
+<p><em>Figure 3 - Participants Page Interface</em></p>
 <dl class="docutils">
-<dt>Окно для управления аккунтом фитбит данного пользователя.</dt>
+<dt>Описание Participants Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>Создание нового пользователя</li>
+<li>Востановление заархивированных ранее пользователя</li>
+<li>функция импорта (массового добавления пользователя)</li>
+<li>Поля имени пользователя, так же является ссылкой на страницу Participant View (LINK!)</li>
+<li>Поле <strong>ExternalId</strong>, может содержать любое значение однозначно индетифицируещее пользователя или ничего</li>
+<li>Координатор <em>Study Group</em> в которой состоит пользователя</li>
+<li>Название <em>Study Group</em> в которой состоит пользователя, также является ссылкой на Group View (LINK!)</li>
+<li>Показывает привязан ли данному пользователя аккаунт <em>Fitbit</em></li>
+<li>Редактирование выбранного пользователя</li>
+<li>Архивирование выбраного пользователя</li>
+<li>Привязка аккаунта <em>Fitbit</em> к выбраному пользователя</li>
+</ol>
+</dd>
+<dt>Окно для управления аккунтом <em>Fitbit</em> данного <em>Participant</em>.</dt>
 <dd><a class="first last reference external image-reference" href="../../_static/Images/Figure_5.png"><img alt="../_images/Figure_5.png" src="../_images/Figure_5.png" /></a>
 </dd>
 </dl>
-<p><em>Fitbit Assinging Window</em></p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>показывает привязан ли фитбит аккаунт</li>
-<li>ссылка для перехода на сайт фитбит для акторизации данного пользователя</li>
-<li>ссылка так же может быть сгенерирована и отображена в окне</li>
-<li>отображение сгенерированной ссылки</li>
-<li>добавить извещение о успегном создании сабсрипшена</li>
+<p><em>Figure 4 - Fitbit Assinging Window</em></p>
+<dl class="docutils">
+<dt>Описание Fitbit Assinging Window:</dt>
+<dd><ol class="first last arabic simple">
+<li>Показывает привязан ли <em>Fitbit</em> аккаунт</li>
+<li>Ссылка для перехода на сайт <em>Fitbit</em> для акторизации данного пользователя</li>
+<li>Ссылка так же может быть сгенерирована и отображена в окне</li>
+<li>Отображение сгенерированной ссылки</li>
+<li><strong>Добавить извещение о успегном создании сабсрипшена</strong></li>
 </ol>
-</div></blockquote>
+</dd>
+</dl>
 </div>
 <div class="section" id="clinician-schedule">
 <h2>Clinician Schedule<a class="headerlink" href="#clinician-schedule" title="Permalink to this headline">¶</a></h2>
-<p>Страница для управления расписанием клин - <a class="reference external" href="http://drexel.azurewebsites.net/Schedule">http://drexel.azurewebsites.net/Schedule</a></p>
+<p>Управление расписанием Clinician осуществляется на странице <a class="reference external" href="http://drexel.azurewebsites.net/Schedule">Clinician Schedule</a>.</p>
 <a class="reference external image-reference" href="../../_static/Images/Figure_6.png"><img alt="../_images/Figure_6.png" src="../_images/Figure_6.png" /></a>
-<p><em>Clinician Schedule Page Interface</em></p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>выбор пользователя для редактирования</li>
-<li>добавления нового правила для определенной группы</li>
-<li>Данное поле отображает для какой группы создана расписание либо указывает что данная расписание является стандартной</li>
-<li>Эллемент для удаления расписание для определенных групп, удаление стандарного расписания недоступно</li>
-<li>поля показывающее время начала и конца временного периода, который готов потратить клинишн в отпереленный день недели</li>
+<p><em>Figure 5 - Clinician Schedule Page Interface</em></p>
+<dl class="docutils">
+<dt>Описание Clinician Schedule Page Interface:</dt>
+<dd><ol class="first last arabic simple">
+<li>Выбор пользователя для редактирования</li>
+<li>Добавления нового правила для определенной <em>Study Group</em></li>
+<li>Данное поле отображает для какой <em>Study Group</em> создано расписание</li>
+<li>Эллемент для удаления расписание для определенных <em>Study Group</em>, удаление стандарного расписания недоступно</li>
+<li>Поля показывающее время начала и конца временного периода, который готов потратить <em>Clinicain</em> в отпереленный день недели</li>
 </ol>
-</div></blockquote>
-<p>Время конца периода не может превышать время начала периода, также периоды не должны пересекаться с другими периодами для этого дня.</p>
-<a class="reference external image-reference" href="../../_static/Images/Figure_7.png"><img alt="../_images/Figure_7.png" src="../_images/Figure_7.png" /></a>
-<p><em>Окно добавления расписания для группы</em></p>
-<blockquote>
-<div><ol class="arabic simple">
-<li>В окне добавления расписания в поле выбора группы отображаются только те группы для которых клинишн является координатором</li>
-</ol>
-</div></blockquote>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Время конца периода не может превышать время начала периода, также периоды не должны пересекаться с другими периодами для этого дня.</p>
 </div>
-<div class="section" id="use-recovery">
-<h2>Use recovery<a class="headerlink" href="#use-recovery" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="../../_static/Images/Figure_7.png"><img alt="../_images/Figure_7.png" src="../_images/Figure_7.png" /></a>
+<p><em>Figure 6 - Окно добавления расписания для Study Group</em></p>
+<dl class="docutils">
+<dt>Описание Окна добавления расписания для <em>Study Group</em>:</dt>
+<dd><ol class="first last arabic simple">
+<li>В окне добавления расписания в поле выбора <em>Study Group</em> отображаются только те <em>Study Group</em> для которых <em>Clinician</em> является координатором</li>
+</ol>
+</dd>
+</dl>
+</div>
+<div class="section" id="user-recovery">
+<h2>User Recovery<a class="headerlink" href="#user-recovery" title="Permalink to this headline">¶</a></h2>
 <p>На портале мы не удаляем данные и пользователей, поэтому любой заархивированный пользователей позднее может быть востановлен.</p>
-<a class="reference external image-reference" href="../../_static/Images/Figure_8.png"><img alt="Administrators Page Interface" src="../_images/Figure_8.png" /></a>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Заархивированные пользователи не имеют возможности авторизоваться на портале, а также не отображатся на портале.</p>
+</div>
+<a class="reference external image-reference" href="../../_static/Images/Figure_8.png"><img alt="../_images/Figure_8.png" src="../_images/Figure_8.png" /></a>
+<p><em>Figure 6 - Окно востановления пользователей</em></p>
 </div>
 </div>
 
@@ -305,7 +330,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Views.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Views.html" class="btn btn-neutral float-right" title="View’s" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../index.html" class="btn btn-neutral" title="Welcome to DrexelDoc’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
