@@ -37,8 +37,8 @@ Administrators
 --------------
 Управление пользователями с ролью Administrator осуществляется на странице `Administrators <http://drexel.azurewebsites.net/Admin/Administrators>`_.
 
-.. image:: /_static/Images/Screenshot_1.png
-   :target: ../../_static/Images/Screenshot_1.png
+.. image:: /_static/Images/Figure_1.png
+   :target: ../../_static/Images/Figure_1.png
 
 *Figure 1 - Administrators Page Interface*
 
@@ -53,8 +53,8 @@ Clinicians
 ----------
 Управление пользователями с ролью *Clinician* осуществляется на странице `Clinicians <http://drexel.azurewebsites.net/Admin/Clinicians>`_.
  
-.. image:: /_static/Images/Figure_3.png
-   :target: ../../_static/Images/Figure_3.png
+.. image:: /_static/Images/Figure_2.png
+   :target: ../../_static/Images/Figure_2.png
 
 *Figure 2 - Clinicians Page Interface*
 
@@ -69,8 +69,8 @@ Participants
 ------------
 Управление пользователями с ролью *Participant* осуществляется на странице `Participants <http://drexel.azurewebsites.net/Admin/Participants>`_.
  
-.. image:: /_static/Images/Figure_4.png
-   :target: ../../_static/Images/Figure_4.png
+.. image:: /_static/Images/Figure_3.png
+   :target: ../../_static/Images/Figure_3.png
 
 *Figure 3 - Participants Page Interface*
 
@@ -88,8 +88,8 @@ Participants
     11. Привязка аккаунта *Fitbit* к выбраному пользователя
  
 Окно для управления аккунтом *Fitbit* данного *Participant*.
- .. image:: /_static/Images/Figure_5.png
-   :target: ../../_static/Images/Figure_5.png
+ .. image:: /_static/Images/Figure_4.png
+   :target: ../../_static/Images/Figure_4.png
 
 *Figure 4 - Fitbit Assinging Window*
 
@@ -105,8 +105,8 @@ Clinician Schedule
 ------------------
 Управление расписанием Clinician осуществляется на странице `Clinician Schedule <http://drexel.azurewebsites.net/Schedule>`_.
 
-.. image:: /_static/Images/Figure_6.png
-   :target: ../../_static/Images/Figure_6.png
+.. image:: /_static/Images/Figure_5.png
+   :target: ../../_static/Images/Figure_5.png
 
 *Figure 5 - Clinician Schedule Page Interface*
 
@@ -119,8 +119,8 @@ Clinician Schedule
 
 .. note:: Время конца периода не может превышать время начала периода, также периоды не должны пересекаться с другими периодами для этого дня.
  
-.. image:: /_static/Images/Figure_7.png
-   :target: ../../_static/Images/Figure_7.png
+.. image:: /_static/Images/Figure_6.png
+   :target: ../../_static/Images/Figure_6.png
 
 *Figure 6 - Окно добавления расписания для Study Group*
 
@@ -134,7 +134,7 @@ User Recovery
 
 .. note:: Заархивированные пользователи не имеют возможности авторизоваться на портале, а также не отображатся на портале.
 
-.. image:: /_static/Images/Figure_8.png
-   :target: ../../_static/Images/Figure_8.png
+.. image:: /_static/Images/Figure_7.png
+   :target: ../../_static/Images/Figure_7.png
 
 *Figure 6 - Окно востановления пользователей*

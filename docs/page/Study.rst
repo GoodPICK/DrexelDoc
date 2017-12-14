@@ -8,26 +8,29 @@ List of studies
 
 Страница содержащая список всех активных Study, а также элементы управления ими.
  
-.. image:: /_static/Images/Figure_9.png
-   :target: ../../_static/Images/Figure_9.png
+.. image:: /_static/Images/Figure_13.png
+   :target: ../../_static/Images/Figure_13.png
 
-*Figure_11 - List of studies Page Interface*
+*Figure_13 - List of studies Page Interface*
 
 Описание List of studies Page Interface:
-    1. количество активных *participants* во всех *Study Group* выбранной *study*
-    2. количество групп в этом *study*, так же является ссылкой на страницу управления *Study Group*
-    3. имя координатора группы
-    4. ссылка на страницу управления *Study Group*
-    5. ссылка на страницу редактирования Expression для данной группы, в зависимости от выбранного типа группы
-    6. экспорт block data для данной *study*
-    7. экспорт raw data для данной *study*
-    8. ссылка на страницу управления *Study Group*
-    9. архивирование *study*
+    1. ссылка для перехода на страницу создания новой *Study*
+    2. ссылка для перехода на страницу тестирования Group Expression (LINK!)
+    3. ссылка для перехода на страницу тестирования Individual Expression (LINK!)
+    4. количество активных *participants* во всех *Study Group* выбранной *study*
+    5. количество групп в этом *study*, так же является ссылкой на страницу управления *Study Group*
+    6. имя координатора *Study*
+    7. ссылка на страницу редактирования *Study*
+    8. ссылка на страницу редактирования Reward Score Expression для данной *Study*
+    9. экспорт **block data** для данной *study*
+    10. экспорт **raw data** для данной *study*
+    11. ссылка на страницу управления *Study Group*
+    12. архивирование выбранной *study*
  
-.. image:: /_static/Images/Figure_9.png
-   :target: ../../_static/Images/Figure_9.png
+.. image:: /_static/Images/Figure_14.png
+   :target: ../../_static/Images/Figure_14.png
 
-*Figure_11 - Create|Update Study Page Interface*
+*Figure_14 - Create|Update Study Page Interface*
 
 Описание Create|Update Study Page Interface:
     1. название *study*
@@ -48,10 +51,10 @@ Groups
 
 Страница для управления группами стади.
  
-.. image:: /_static/Images/Figure_9.png
-   :target: ../../_static/Images/Figure_9.png
+.. image:: /_static/Images/Figure_15.png
+   :target: ../../_static/Images/Figure_15.png
 
-*Figure_11 - Groups Page Inteface*
+*Figure_15 - Groups Page Inteface*
 
 Описание - Groups Page Inteface:
     1. ссылка на страницу создания новой *Study Group*
@@ -73,10 +76,10 @@ Study Group Add|Update Page
 
 В случае если рассписание не активно интервеншены будут создаваться в соотвестсвии с временем указанным в Intervention setup данного партиципанта, даже если установлено одно время для всех. Нотификации создаваться не будут.
  
-.. image:: /_static/Images/Figure_9.png
-   :target: ../../_static/Images/Figure_9.png
+.. image:: /_static/Images/Figure_16.png
+   :target: ../../_static/Images/Figure_16.png
 
-*Figure_11 - Study Group Add|Update Page Interface* 
+*Figure_16 - Study Group Add|Update Page Interface* 
 
 Описание Study Group Add|Update Page Interface:
     1. название *Study Group*

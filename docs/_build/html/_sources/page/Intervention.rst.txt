@@ -10,20 +10,20 @@ Autotext
 
 .. note:: Каждый текст будет отправлен как отдельное смс.
  
-.. image:: /_static/Images/Figure_9.png
-   :target: ../../_static/Images/Figure_9.png
+.. image:: /_static/Images/Figure_17.png
+   :target: ../../_static/Images/Figure_17.png
 
-*Figure_11 - Autotexts Inteface Page*
+*Figure_17 - Autotexts Inteface Page*
 
 Описание Autotexts Inteface Page:
     1. выбор *Study*
     2. эллемент для вызова меню управления правилами данного автотекста
     3. текст отсылаемый в случае отправи данного сообщения
-    4. общие правила отправки:
+    4. редактирование текста сообщения данного автотекста
+    5. общие правила отправки:
         * **Active** – делает данный текст активным или не активным, неактивные тексты неотсылаются даже при соблюдении всех остальных условий, активные - могут быть отосланы при соблюдении остальных условий
         * **Always Send** – добавляет текст к отправке даже если какие то другие условия не соблюдены (кроме Active, тоесть должны быть активны оба пункта чтобы сообщение было отправлено с 100% гарантией)
-        * **Send if any goal failed** - добавляет текст к отправке если какое то из условий ниже невыполнено внезависимости от того используется оно или нет (что выбрано Done или Fail или DoNotUse)
-    5. редактирование текста сообщения данного автотекста
+        * **Send if any goal failed** - добавляет текст к отправке если какое то из условий ниже невыполнено внезависимости от того используется оно или нет (что выбрано Done или Fail или DoNotUse)    
     6. группа настрое соответствующих целям study, для каждой настройки есть 3 варианта использования: 
         * **Done** – возвращает **true** если цель выполнена
         * **Fail** – возвращает **true** если цель провалена
@@ -34,10 +34,10 @@ Autotext
 
 Для автотекста типа **Summary** окно настроек отличается
  
-.. image:: /_static/Images/Figure_9.png
-   :target: ../../_static/Images/Figure_9.png
+.. image:: /_static/Images/Figure_18.png
+   :target: ../../_static/Images/Figure_18.png
 
-*Figure_11 - Summary Autotext Interface*
+*Figure_18 - Summary Autotext Interface*
 
 Описание Summary Autotext Interface:
     1. Summary **Message Template**.
@@ -53,10 +53,10 @@ Intervention Feed
 -----------------
 Страница для просмотра *Intervention* для всех *Participant* состоящих в *Study Group* у которых координатором является выбранный *Clinician*. По умолчанию *Intervention* отсортированы по дате отправки по убыванию.
 
-.. image:: /_static/Images/Figure_14.png
-   :target: ../../_static/Images/Figure_14.png
+.. image:: /_static/Images/Figure_19.png
+   :target: ../../_static/Images/Figure_19.png
 
-*Figure_14 - Summary Autotext Interface*
+*Figure_19 - Summary Autotext Interface*
 
 Описание Summary Autotext Interface:
     1. Выбор *Clinician* для которого будут показаны *Intervention* связанных *Participant*
@@ -84,30 +84,20 @@ Intervention Feed
 
 .. note:: тип Autotexts не имеет страницы для обработки, поэтому Елеемент (пункт 14) помечен как недоступный
 
-.. image:: /_static/Images/Figure_15.png
-   :target: ../../_static/Images/Figure_15.png
+.. note:: При ручном создании *Intervention* типа автотекст, текст сообщения будет создан в момент отправки на основе автотекстов *Study Group* к которой привязан выбранный *Participant*
 
-*Figure_14 - Manual Add Intervention Window*
-
-Описание Manual Add Intervention Window:
-    1. Доступные для выбора *Participant*, состоящие в какой либо *Study Group*
-    2. Доступные для выбора *Intervention* Type, заполняются в зависимости от *Study Group* выбранного в пункте 1 *Participant*
-    3. Сообщение для создаваемого *Intervention*
-
-.. note:: При создании *Intervention* типа автотекст, текст сообщения будет создан в момент отправки на основе автотекстов *Study Group* к которой привязан выбранный *Participant*
-
-.. image:: /_static/Images/Figure_17.png
-   :target: ../../_static/Images/Figure_17.png
+.. image:: /_static/Images/Figure_20.png
+   :target: ../../_static/Images/Figure_20.png
 
 
 Interventions Setup
 -------------------
 Страница предназначена для создания и изменения правил по которым будут выбираться дни создания *Intervention*, и время создания *Intervention*.
 
-.. image:: /_static/Images/Figure_16.png
-   :target: ../../_static/Images/Figure_16.png
+.. image:: /_static/Images/Figure_21.png
+   :target: ../../_static/Images/Figure_21.png
 
-*Figure_16 - Interventions Setup Page Interface*
+*Figure_21 - Interventions Setup Page Interface*
 
 Описание Interventions Setup Page Interface:
     1. Выбор *Participant* для которого будут изменяться настройки

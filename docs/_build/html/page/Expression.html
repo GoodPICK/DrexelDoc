@@ -187,9 +187,9 @@
 <h2>Rs Espression<a class="headerlink" href="#rs-espression" title="Permalink to this headline">¶</a></h2>
 <p>Выражение для расчета RS. Применяется при каждом расчете обновлении любых данных полученных от <em>Fitbit</em>.</p>
 <blockquote>
-<div><a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
+<div><a class="reference external image-reference" href="../../_static/Images/Figure_16.png"><img alt="../_images/Figure_16.png" src="../_images/Figure_16.png" /></a>
 </div></blockquote>
-<p><em>Figure_11 - Rs Expression Page Interface</em></p>
+<p><em>Figure_16 - Rs Expression Page Interface</em></p>
 <dl class="docutils">
 <dt>Описание Rs Expression Page Interface:</dt>
 <dd><ol class="first last arabic simple">
@@ -223,37 +223,13 @@
 <p class="last">Обратите внимание что проверка на соответсвие ограничению по максимальному времени включено в <em>Expression</em> и соответсвенно может быть проигнорировано.</p>
 </div>
 <p>Например при генерации <em>Intervention</em> для 4ых человек лучшим состоянием стало - [1,0,0,2], что означает что для первого <em>Participant</em> будет выбран <em>Intervention</em> первого типа (из списка всех типов <em>Intervention</em> study в которой состоит <em>Participant</em>), для второго <em>Participant</em> будет выбран <em>Intervention</em> нулевого типа (нумерация начинается с нуля), для третьего <em>Participant</em> буде выбран <em>Intervention</em> нулевого типа, для четвертого <em>Participant</em> буде выбран <em>Intervention</em> второго типа. Затем на основе состояние будет сформирован список <em>Intervention</em>, если нулевой тип – автотекст (например), первый тип – текстлинициста, второй тип – звонок. в результате получится 2 автотекста, 1 звонок и 1 текстклинициста.</p>
-<a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
-<p><em>Figure_11 - Optimazed Expression Edit Page Interface</em></p>
-<dl class="docutils">
-<dt>Описание Optimazed Expression Edit Page Interface:</dt>
-<dd><ol class="first last arabic simple">
-<li>поле ввода Expression, автоматически подсвечивает цветом переменные (синим), операторы (серым) и функции (красным или оранженым) при правильном вводе. Если введенная переменная или функция не подсветилась значит, скорее всего она введена неправильно</li>
-<li>сохранение Expression для дальнойшего использование при генерации <em>Intervention</em></li>
-<li>подсказки</li>
-<li>список переменных с их кратким описанием</li>
-<li>примеры функций</li>
-</ol>
-</dd>
-</dl>
+<p><strong>добавить описание примеров</strong></p>
 </div>
 <div class="section" id="non-optimazed-expression">
 <h2>Non-Optimazed Expression<a class="headerlink" href="#non-optimazed-expression" title="Permalink to this headline">¶</a></h2>
 <p>Также называется Individual Optimazed Expression.</p>
 <p>Данный <em>Expression</em> применятся для генерации <em>Intervention</em> у групп с индивидуальной оптимизацией. Данное <em>Expression</em> обрабатывается индивидуально для каждого пользователя. Результатом выполнения должен быть id <em>Intervention</em> желаемого типа, один из <strong>StudyInterventionIds</strong>. Данные <strong>StudyInterventionIds</strong> соотвествую тем типам <em>Intervention</em> соответсвующие типам Study с которой связана выбранная <em>Study Group</em>.</p>
 <p>Rs которые содержится в переменной <strong>RScores</strong> должен соответсвовать RS отображаемому на страницах study coordinator view and group view (LINK!).</p>
-<a class="reference external image-reference" href="../../_static/Images/Figure_9.png"><img alt="../_images/Figure_9.png" src="../_images/Figure_9.png" /></a>
-<p><em>Figure_11 - Non-Optimazed Expression Edit Page Interface</em></p>
-<dl class="docutils">
-<dt>Описание Non-Optimazed Expression Edit Page Interface:</dt>
-<dd><ol class="first last arabic simple">
-<li>поле ввода Expression, автоматически подсвечивает цветом переменные (синим), операторы (серым) и функции (красным или оранженым) при правильном вводе. Если введенная переменная или функция не подсветилась значит, скорее всего она введена неправильно</li>
-<li>сохранение Expression для дальнойшего использование при генерации интервеншенов</li>
-<li>список переменных с их кратким описанием</li>
-<li>примеры функций</li>
-</ol>
-</dd>
-</dl>
 <p><strong>Разобраться и описать примеры</strong></p>
 </div>
 </div>

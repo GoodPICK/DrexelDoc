@@ -20,10 +20,10 @@ Rs Espression
 -------------
 Выражение для расчета RS. Применяется при каждом расчете обновлении любых данных полученных от *Fitbit*.
  
- .. image:: /_static/Images/Figure_9.png
-   :target: ../../_static/Images/Figure_9.png
+ .. image:: /_static/Images/Figure_16.png
+   :target: ../../_static/Images/Figure_16.png
 
-*Figure_11 - Rs Expression Page Interface*
+*Figure_16 - Rs Expression Page Interface*
 
 Описание Rs Expression Page Interface:
     1. поле ввода Expression, автоматически подсвечивает цветом переменные (синим), операторы (серым) и функции (красным или оранженым) при правильном вводе. Если введенная переменная или функция не подсветилась значит, скорее всего она введена неправильно
@@ -52,18 +52,7 @@ Optimazed Expression
 
 Например при генерации *Intervention* для 4ых человек лучшим состоянием стало - [1,0,0,2], что означает что для первого *Participant* будет выбран *Intervention* первого типа (из списка всех типов *Intervention* study в которой состоит *Participant*), для второго *Participant* будет выбран *Intervention* нулевого типа (нумерация начинается с нуля), для третьего *Participant* буде выбран *Intervention* нулевого типа, для четвертого *Participant* буде выбран *Intervention* второго типа. Затем на основе состояние будет сформирован список *Intervention*, если нулевой тип – автотекст (например), первый тип – текстлинициста, второй тип – звонок. в результате получится 2 автотекста, 1 звонок и 1 текстклинициста.
 
-.. image:: /_static/Images/Figure_9.png
-   :target: ../../_static/Images/Figure_9.png
-
-*Figure_11 - Optimazed Expression Edit Page Interface*
-
-Описание Optimazed Expression Edit Page Interface:
-    1. поле ввода Expression, автоматически подсвечивает цветом переменные (синим), операторы (серым) и функции (красным или оранженым) при правильном вводе. Если введенная переменная или функция не подсветилась значит, скорее всего она введена неправильно
-    2. сохранение Expression для дальнойшего использование при генерации *Intervention*
-    3. подсказки
-    4. список переменных с их кратким описанием
-    5. примеры функций
-
+**добавить описание примеров**
 
 Non-Optimazed Expression
 ------------------------
@@ -72,16 +61,5 @@ Non-Optimazed Expression
 Данный *Expression* применятся для генерации *Intervention* у групп с индивидуальной оптимизацией. Данное *Expression* обрабатывается индивидуально для каждого пользователя. Результатом выполнения должен быть id *Intervention* желаемого типа, один из **StudyInterventionIds**. Данные **StudyInterventionIds** соотвествую тем типам *Intervention* соответсвующие типам Study с которой связана выбранная *Study Group*.
 
 Rs которые содержится в переменной **RScores** должен соответсвовать RS отображаемому на страницах study coordinator view and group view (LINK!). 
-
-.. image:: /_static/Images/Figure_9.png
-   :target: ../../_static/Images/Figure_9.png
-
-*Figure_11 - Non-Optimazed Expression Edit Page Interface*
-
-Описание Non-Optimazed Expression Edit Page Interface:
-    1. поле ввода Expression, автоматически подсвечивает цветом переменные (синим), операторы (серым) и функции (красным или оранженым) при правильном вводе. Если введенная переменная или функция не подсветилась значит, скорее всего она введена неправильно
-    2. сохранение Expression для дальнойшего использование при генерации интервеншенов
-    3. список переменных с их кратким описанием
-    4. примеры функций
 
 **Разобраться и описать примеры**
