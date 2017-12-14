@@ -54,7 +54,7 @@ Clinicians
 Управление пользователями с ролью *Clinician* осуществляется на странице `Clinicians <http://drexel.azurewebsites.net/Admin/Clinicians>`_.
  
 .. image:: /_static/Images/Figure_2.png
-   :target: ../../_static/Images/Figure_2.png
+   :target: ../../latest/_images/Figure_2.png
 
 *Figure 2 - Clinicians Page Interface*
 
@@ -70,7 +70,7 @@ Participants
 Управление пользователями с ролью *Participant* осуществляется на странице `Participants <http://drexel.azurewebsites.net/Admin/Participants>`_.
  
 .. image:: /_static/Images/Figure_3.png
-   :target: ../../_static/Images/Figure_3.png
+   :target: ../../latest/_images/Figure_3.png
 
 *Figure 3 - Participants Page Interface*
 
@@ -89,7 +89,7 @@ Participants
  
 Окно для управления аккунтом *Fitbit* данного *Participant*.
  .. image:: /_static/Images/Figure_4.png
-   :target: ../../_static/Images/Figure_4.png
+   :target: ../../latest/_images/Figure_4.png
 
 *Figure 4 - Fitbit Assinging Window*
 
@@ -106,7 +106,7 @@ Clinician Schedule
 Управление расписанием Clinician осуществляется на странице `Clinician Schedule <http://drexel.azurewebsites.net/Schedule>`_.
 
 .. image:: /_static/Images/Figure_5.png
-   :target: ../../_static/Images/Figure_5.png
+   :target:../../latest/_images/Figure_5.png
 
 *Figure 5 - Clinician Schedule Page Interface*
 
@@ -120,7 +120,7 @@ Clinician Schedule
 .. note:: Время конца периода не может превышать время начала периода, также периоды не должны пересекаться с другими периодами для этого дня.
  
 .. image:: /_static/Images/Figure_6.png
-   :target: ../../_static/Images/Figure_6.png
+   :target: ../../latest/_images/Figure_6.png
 
 *Figure 6 - Окно добавления расписания для Study Group*
 
@@ -135,6 +135,6 @@ User Recovery
 .. note:: Заархивированные пользователи не имеют возможности авторизоваться на портале, а также не отображатся на портале.
 
 .. image:: /_static/Images/Figure_7.png
-   :target: ../../_static/Images/Figure_7.png
+   :target: ../../latest/_images/Figure_7.png
 
 *Figure 6 - Окно востановления пользователей*

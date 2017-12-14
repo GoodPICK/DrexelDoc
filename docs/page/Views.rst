@@ -9,7 +9,7 @@ Participant View
 Главная страница портала. Предназначена для визуализации данных полученных от *Fitbit*. Также содержит эллементы для удобного выбора *Participant* и список их *Intervention*. 
 
 .. image:: /_static/Images/Figure_8.png
-   :target: ../../_static/Images/Figure_8.png
+   :target: ../../latest/_images/Figure_8.png
 
 *Figure 8 - Participant View Page Interface*
 
@@ -29,12 +29,12 @@ Participant View
 .. note:: В таблице *Inteventions* на данной странице не отображатся *Inteventions* типа *Autotext*, время отправки которых еще не наступило, и *Inteventions* типа *Notification*
 
 .. image:: /_static/Images/Figure_9.png
-   :target: ../../_static/Images/Figure_9.png
+   :target: ../../latest/_images/Figure_9.png
 
 *Figure 9 - Окно с детальным логом еды, вызванное при клике на графике калорий*
 
 .. image:: /_static/Images/Figure_10.png
-   :target: ../../_static/Images/Figure_10.png
+   :target: ../../latest/_images/Figure_10.png
 
 *Figure 10 - Окно с детальным логом активности, вызванное при клике на графике активности*
 
@@ -101,7 +101,7 @@ Group View
 Страница Group view содержит список всех пользователей *Study Group*, с агригированными данными интервеншенов и индивидуальными целями пользователя. 
  
 .. image:: /_static/Images/Figure_11.png
-   :target: ../../_static/Images/Figure_11.png
+   :target: ../../latest/_images/Figure_11.png
 
 *Figure 11 - Group View Interface*
 
@@ -121,7 +121,7 @@ Group View
 
 
 .. image:: /_static/Images/Figure_12.png
-   :target: ../../_static/Images/Figure_12.png
+   :target: ../../latest/_images/Figure_12.png
 
 *Figure 12 - Окно управления индивидуальными целями* 
 

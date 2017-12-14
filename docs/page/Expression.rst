@@ -21,7 +21,7 @@ Rs Espression
 Выражение для расчета RS. Применяется при каждом расчете обновлении любых данных полученных от *Fitbit*.
  
  .. image:: /_static/Images/Figure_16.png
-   :target: ../../_static/Images/Figure_16.png
+   :target: ../../latest/_images/Figure_16.png
 
 *Figure_16 - Rs Expression Page Interface*
 

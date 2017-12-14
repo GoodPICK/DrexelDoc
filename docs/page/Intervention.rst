@@ -11,7 +11,7 @@ Autotext
 .. note:: Каждый текст будет отправлен как отдельное смс.
  
 .. image:: /_static/Images/Figure_17.png
-   :target: ../../_static/Images/Figure_17.png
+   :target: ../../latest/_images/Figure_17.png
 
 *Figure_17 - Autotexts Inteface Page*
 
@@ -35,7 +35,7 @@ Autotext
 Для автотекста типа **Summary** окно настроек отличается
  
 .. image:: /_static/Images/Figure_18.png
-   :target: ../../_static/Images/Figure_18.png
+   :target: ../../latest/_images/Figure_18.png
 
 *Figure_18 - Summary Autotext Interface*
 
@@ -54,7 +54,7 @@ Intervention Feed
 Страница для просмотра *Intervention* для всех *Participant* состоящих в *Study Group* у которых координатором является выбранный *Clinician*. По умолчанию *Intervention* отсортированы по дате отправки по убыванию.
 
 .. image:: /_static/Images/Figure_19.png
-   :target: ../../_static/Images/Figure_19.png
+   :target: ../../latest/_images/Figure_19.png
 
 *Figure_19 - Summary Autotext Interface*
 
@@ -87,7 +87,7 @@ Intervention Feed
 .. note:: При ручном создании *Intervention* типа автотекст, текст сообщения будет создан в момент отправки на основе автотекстов *Study Group* к которой привязан выбранный *Participant*
 
 .. image:: /_static/Images/Figure_20.png
-   :target: ../../_static/Images/Figure_20.png
+   :target: ../../latest/_images/Figure_20.png
 
 
 Interventions Setup
@@ -95,7 +95,7 @@ Interventions Setup
 Страница предназначена для создания и изменения правил по которым будут выбираться дни создания *Intervention*, и время создания *Intervention*.
 
 .. image:: /_static/Images/Figure_21.png
-   :target: ../../_static/Images/Figure_21.png
+   :target: ../../latest/_images/Figure_21.png
 
 *Figure_21 - Interventions Setup Page Interface*
 
