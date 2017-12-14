@@ -38,7 +38,7 @@ Administrators
 Управление пользователями с ролью Administrator осуществляется на странице `Administrators <http://drexel.azurewebsites.net/Admin/Administrators>`_.
 
 .. image:: /_static/Images/Figure_1.png
-   :target: ../../_static/Images/Figure_1.png
+   :target: ../../_images/Figure_1.png
 
 *Figure 1 - Administrators Page Interface*
 
