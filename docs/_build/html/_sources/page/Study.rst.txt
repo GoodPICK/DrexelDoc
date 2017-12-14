@@ -9,7 +9,7 @@ List of studies
 Страница содержащая список всех активных Study, а также элементы управления ими.
  
 .. image:: /_static/Images/Figure_13.png
-   :target: ../../_static/Images/Figure_13.png
+   :target: ../../latest/_images/Figure_13.png
 
 *Figure_13 - List of studies Page Interface*
 
@@ -28,7 +28,7 @@ List of studies
     12. архивирование выбранной *study*
  
 .. image:: /_static/Images/Figure_14.png
-   :target: ../../_static/Images/Figure_14.png
+   :target: ../../latest/_images/Figure_14.png
 
 *Figure_14 - Create|Update Study Page Interface*
 
@@ -52,7 +52,7 @@ Groups
 Страница для управления группами стади.
  
 .. image:: /_static/Images/Figure_15.png
-   :target: ../../_static/Images/Figure_15.png
+   :target: ../../latest/_images/Figure_15.png
 
 *Figure_15 - Groups Page Inteface*
 
@@ -77,7 +77,7 @@ Study Group Add|Update Page
 В случае если рассписание не активно интервеншены будут создаваться в соотвестсвии с временем указанным в Intervention setup данного партиципанта, даже если установлено одно время для всех. Нотификации создаваться не будут.
  
 .. image:: /_static/Images/Figure_16.png
-   :target: ../../_static/Images/Figure_16.png
+   :target: ../../latest/_images/Figure_16.png
 
 *Figure_16 - Study Group Add|Update Page Interface* 
 

@@ -106,7 +106,7 @@ Clinician Schedule
 Управление расписанием Clinician осуществляется на странице `Clinician Schedule <http://drexel.azurewebsites.net/Schedule>`_.
 
 .. image:: /_static/Images/Figure_5.png
-   :target:../../latest/_images/Figure_5.png
+   :target: ../../latest/_images/Figure_5.png
 
 *Figure 5 - Clinician Schedule Page Interface*
 

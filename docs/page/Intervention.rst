@@ -72,7 +72,7 @@ Intervention Feed
     11. Поле указывающее был ли создан данный *Intervention* вручную 
     12. Елеемент добавляемый к созданым вручную *Intervention*, указыващий кем и когда был добавлен
     13. Статус *Intervention* 
-    14. Ссылка на страницу обработки данного *Intervention*, для каждого типа своя страница
+    14. Ссылка на **Delivery Form** данного *Intervention*, для каждого типа своя страница
     15. Елеемент удаления *Intervention*
 
 У *Intervention* может быть 3 статуса:
@@ -86,18 +86,68 @@ Intervention Feed
 
 .. note:: При ручном создании *Intervention* типа автотекст, текст сообщения будет создан в момент отправки на основе автотекстов *Study Group* к которой привязан выбранный *Participant*
 
+
+Delivery Forms
+--------------
+Delivery Forms - специальные страницы предназначенные для обработки *Intervention*. На этих страницах может быть изменен статут *Intervention* или записаны/просмотрены подробности интервеншена. Так же на данной странице для *Intervention* типа **Text Exchange** может производиться отправка Sms сообщений.
+
+.. warning:: В текущий момент статут *Intervention* никак дополнительно не обрабатывается и служит только для удобства *Clinician*. 
+
+Существует 4 основных типа интервеншенов:
+    * **Call**
+    * **Text Exchange**
+    * **Visit**
+    * **Autotext**
+
+И дополнительный тип - **Notification**. **Notification** в целом не является *Intervention* и нигде не обрабатывается как *Intervention*. Он генерируется при оповещении пользователей о предстоящем *Intervention* 
+и отображается в *Intervention Feed* только для того чтобы *Clinician* знали о том что данные сообщения были отосланы.
+
 .. image:: /_static/Images/Figure_20.png
    :target: ../../latest/_images/Figure_20.png
 
+*Figure_20 - Text Exchange Intervention Delivery Form*
+
+Описание - Text Exchange Intervention Delivery Form:
+    1. Заголовок содержит временной период за который будут показаны сообщения
+    2. Окно для отображения сообщений. Синим цветом справа отображаются сообщения отправленные на номер пользователя.
+    3. Элемент при использовании которого происходит отправа сообщения введенного в поле под пунктом 4
+    4. Элемент для ввода текста сообщения которое будет отправлено в качестве смс.
+    5. Выбор предыдущего временного периода, если таковой имеется
+    6. Выбор следующего временного периода, если таковой имеется
+    7. Данные пользователя связанного с *Intervention*
+    8. Выбор статуса *Intervention*, под статусом подразумевается результат обработки интервеншена
+    9. Поле ввода комментария. Комментарий служит лишь для описания каких либо дополнительных данных и не будет использоваться де либо на портале.
+    10. Эллемент для сохранения изменений. Сохраняется только **Intervention State** и **Private Comments**, и никак не влияет на сообщения и данные *Participant*
+    11. Удаление данного интервеншена
+    12. Возврат на страницу *Intervention Feed*
+
+.. note:: про автозаполнение первого месседжа
+
+.. image:: /_static/Images/Figure_21.png
+   :target: ../../latest/_images/Figure_21.png
+
+*Figure_21 - Call Intervention Delivery Form*
+
+Описание - Call Intervention Delivery Form:
+    1. Данные пользователя связанного с *Intervention*
+    2. Выбор статуса *Intervention*, под статусом подразумевается результат обработки интервеншена
+    3. Для данного типа *Intervention*, предусмотрены дополнительные варианты статуса если выбран статут **Partial Visit**
+    4. Подробности для дополнительного статуса **Other**, может быть заполнено любыми данными
+    5. Поле для внесения каких либо подробностей *Intervention*
+    6. Поле для внесения каких либо подробностей *Intervention*
+    7. Удаление данного интервеншена
+    8. Возврат на страницу *Intervention Feed*
+
+.. note:: Visit Intervention Delivery Form аналогична Call Intervention Delivery Form. А подобной формы для *Intervention* типа **Autotext** не предусмотрено.
 
 Interventions Setup
 -------------------
 Страница предназначена для создания и изменения правил по которым будут выбираться дни создания *Intervention*, и время создания *Intervention*.
 
-.. image:: /_static/Images/Figure_21.png
-   :target: ../../latest/_images/Figure_21.png
+.. image:: /_static/Images/Figure_22.png
+   :target: ../../latest/_images/Figure_22.png
 
-*Figure_21 - Interventions Setup Page Interface*
+*Figure_22 - Call Intervention Delivery Form*
 
 Описание Interventions Setup Page Interface:
     1. Выбор *Participant* для которого будут изменяться настройки
@@ -112,6 +162,8 @@ Interventions Setup
 Также можно добавить день в который будет создан *Intervention* даже если настройки этого не предусматривают,для этого необходимо кликнуть по соответсвующему дню, если он окрашен белым. В случае успеха выбранный день календаря должен стать синим, что означает что в этот день портал принудительно создаст *Intervention*
 
 .. note:: В отличии от ручного добавления *Intervention* использование данного способа позволит порталу самостоятельно выбрать тип интервеншена так как если бы этот день был указан в настройках
+
+.. warning:: Interventions are created every day at 01:00 AM for Optimized groups and at 01:20 AM for Non-Optimized groups. Any changes to the schedule after these times won't have any effect for current day's schedule.
 
 
 All Sms Messages

@@ -98,6 +98,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Interventions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#autotext">Autotext</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#intervention-feed">Intervention Feed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#delivery-forms">Delivery Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#interventions-setup">Interventions Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#all-sms-messages">All Sms Messages</a></li>
 </ul>
@@ -176,7 +177,7 @@
 <p class="first admonition-title">Note</p>
 <p class="last">Каждый текст будет отправлен как отдельное смс.</p>
 </div>
-<a class="reference external image-reference" href="../../_static/Images/Figure_17.png"><img alt="../_images/Figure_17.png" src="../_images/Figure_17.png" /></a>
+<a class="reference external image-reference" href="../../latest/_images/Figure_17.png"><img alt="../_images/Figure_17.png" src="../_images/Figure_17.png" /></a>
 <p><em>Figure_17 - Autotexts Inteface Page</em></p>
 <dl class="docutils">
 <dt>Описание Autotexts Inteface Page:</dt>
@@ -214,7 +215,7 @@
 <p class="last">Для отправки сообщения каждого автотекста он должен быть отмечен как <strong>Active</strong> и все настройки из 6 и 7 группы должны возвращать состояние <strong>true</strong> или должен быть отмечен как <strong>Active</strong> и <strong>Always Send</strong>.</p>
 </div>
 <p>Для автотекста типа <strong>Summary</strong> окно настроек отличается</p>
-<a class="reference external image-reference" href="../../_static/Images/Figure_18.png"><img alt="../_images/Figure_18.png" src="../_images/Figure_18.png" /></a>
+<a class="reference external image-reference" href="../../latest/_images/Figure_18.png"><img alt="../_images/Figure_18.png" src="../_images/Figure_18.png" /></a>
 <p><em>Figure_18 - Summary Autotext Interface</em></p>
 <dl class="docutils">
 <dt>Описание Summary Autotext Interface:</dt>
@@ -237,7 +238,7 @@
 <div class="section" id="intervention-feed">
 <h2>Intervention Feed<a class="headerlink" href="#intervention-feed" title="Permalink to this headline">¶</a></h2>
 <p>Страница для просмотра <em>Intervention</em> для всех <em>Participant</em> состоящих в <em>Study Group</em> у которых координатором является выбранный <em>Clinician</em>. По умолчанию <em>Intervention</em> отсортированы по дате отправки по убыванию.</p>
-<a class="reference external image-reference" href="../../_static/Images/Figure_19.png"><img alt="../_images/Figure_19.png" src="../_images/Figure_19.png" /></a>
+<a class="reference external image-reference" href="../../latest/_images/Figure_19.png"><img alt="../_images/Figure_19.png" src="../_images/Figure_19.png" /></a>
 <p><em>Figure_19 - Summary Autotext Interface</em></p>
 <dl class="docutils">
 <dt>Описание Summary Autotext Interface:</dt>
@@ -255,7 +256,7 @@
 <li>Поле указывающее был ли создан данный <em>Intervention</em> вручную</li>
 <li>Елеемент добавляемый к созданым вручную <em>Intervention</em>, указыващий кем и когда был добавлен</li>
 <li>Статус <em>Intervention</em></li>
-<li>Ссылка на страницу обработки данного <em>Intervention</em>, для каждого типа своя страница</li>
+<li>Ссылка на <strong>Delivery Form</strong> данного <em>Intervention</em>, для каждого типа своя страница</li>
 <li>Елеемент удаления <em>Intervention</em></li>
 </ol>
 </dd>
@@ -279,13 +280,74 @@
 <p class="first admonition-title">Note</p>
 <p class="last">При ручном создании <em>Intervention</em> типа автотекст, текст сообщения будет создан в момент отправки на основе автотекстов <em>Study Group</em> к которой привязан выбранный <em>Participant</em></p>
 </div>
-<a class="reference external image-reference" href="../../_static/Images/Figure_20.png"><img alt="../_images/Figure_20.png" src="../_images/Figure_20.png" /></a>
+</div>
+<div class="section" id="delivery-forms">
+<h2>Delivery Forms<a class="headerlink" href="#delivery-forms" title="Permalink to this headline">¶</a></h2>
+<p>Delivery Forms - специальные страницы предназначенные для обработки <em>Intervention</em>. На этих страницах может быть изменен статут <em>Intervention</em> или записаны/просмотрены подробности интервеншена. Так же на данной странице для <em>Intervention</em> типа <strong>Text Exchange</strong> может производиться отправка Sms сообщений.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">В текущий момент статут <em>Intervention</em> никак дополнительно не обрабатывается и служит только для удобства <em>Clinician</em>.</p>
+</div>
+<dl class="docutils">
+<dt>Существует 4 основных типа интервеншенов:</dt>
+<dd><ul class="first last simple">
+<li><strong>Call</strong></li>
+<li><strong>Text Exchange</strong></li>
+<li><strong>Visit</strong></li>
+<li><strong>Autotext</strong></li>
+</ul>
+</dd>
+</dl>
+<p>И дополнительный тип - <strong>Notification</strong>. <strong>Notification</strong> в целом не является <em>Intervention</em> и нигде не обрабатывается как <em>Intervention</em>. Он генерируется при оповещении пользователей о предстоящем <em>Intervention</em>
+и отображается в <em>Intervention Feed</em> только для того чтобы <em>Clinician</em> знали о том что данные сообщения были отосланы.</p>
+<a class="reference external image-reference" href="../../latest/_images/Figure_20.png"><img alt="../_images/Figure_20.png" src="../_images/Figure_20.png" /></a>
+<p><em>Figure_20 - Text Exchange Intervention Delivery Form</em></p>
+<dl class="docutils">
+<dt>Описание - Text Exchange Intervention Delivery Form:</dt>
+<dd><ol class="first last arabic simple">
+<li>Заголовок содержит временной период за который будут показаны сообщения</li>
+<li>Окно для отображения сообщений. Синим цветом справа отображаются сообщения отправленные на номер пользователя.</li>
+<li>Элемент при использовании которого происходит отправа сообщения введенного в поле под пунктом 4</li>
+<li>Элемент для ввода текста сообщения которое будет отправлено в качестве смс.</li>
+<li>Выбор предыдущего временного периода, если таковой имеется</li>
+<li>Выбор следующего временного периода, если таковой имеется</li>
+<li>Данные пользователя связанного с <em>Intervention</em></li>
+<li>Выбор статуса <em>Intervention</em>, под статусом подразумевается результат обработки интервеншена</li>
+<li>Поле ввода комментария. Комментарий служит лишь для описания каких либо дополнительных данных и не будет использоваться де либо на портале.</li>
+<li>Эллемент для сохранения изменений. Сохраняется только <strong>Intervention State</strong> и <strong>Private Comments</strong>, и никак не влияет на сообщения и данные <em>Participant</em></li>
+<li>Удаление данного интервеншена</li>
+<li>Возврат на страницу <em>Intervention Feed</em></li>
+</ol>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">про автозаполнение первого месседжа</p>
+</div>
+<a class="reference external image-reference" href="../../latest/_images/Figure_21.png"><img alt="../_images/Figure_21.png" src="../_images/Figure_21.png" /></a>
+<p><em>Figure_21 - Call Intervention Delivery Form</em></p>
+<dl class="docutils">
+<dt>Описание - Call Intervention Delivery Form:</dt>
+<dd><ol class="first last arabic simple">
+<li>Данные пользователя связанного с <em>Intervention</em></li>
+<li>Выбор статуса <em>Intervention</em>, под статусом подразумевается результат обработки интервеншена</li>
+<li>Для данного типа <em>Intervention</em>, предусмотрены дополнительные варианты статуса если выбран статут <strong>Partial Visit</strong></li>
+<li>Подробности для дополнительного статуса <strong>Other</strong>, может быть заполнено любыми данными</li>
+<li>Поле для внесения каких либо подробностей <em>Intervention</em></li>
+<li>Поле для внесения каких либо подробностей <em>Intervention</em></li>
+<li>Удаление данного интервеншена</li>
+<li>Возврат на страницу <em>Intervention Feed</em></li>
+</ol>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Visit Intervention Delivery Form аналогична Call Intervention Delivery Form. А подобной формы для <em>Intervention</em> типа <strong>Autotext</strong> не предусмотрено.</p>
+</div>
 </div>
 <div class="section" id="interventions-setup">
 <h2>Interventions Setup<a class="headerlink" href="#interventions-setup" title="Permalink to this headline">¶</a></h2>
 <p>Страница предназначена для создания и изменения правил по которым будут выбираться дни создания <em>Intervention</em>, и время создания <em>Intervention</em>.</p>
-<a class="reference external image-reference" href="../../_static/Images/Figure_21.png"><img alt="../_images/Figure_21.png" src="../_images/Figure_21.png" /></a>
-<p><em>Figure_21 - Interventions Setup Page Interface</em></p>
 <dl class="docutils">
 <dt>Описание Interventions Setup Page Interface:</dt>
 <dd><ol class="first last arabic simple">
